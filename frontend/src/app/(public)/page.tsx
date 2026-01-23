@@ -102,31 +102,47 @@ export default function Home() {
     }
   };
     // handel file upload for pdf parsing
-  const handleFileUpload = async (event) => {
-    const file = event.target.files[0];
+    const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
     if (!file) return;
+
+    // التحقق من نوع الملف
+    if (file.type !== 'application/pdf') {
+        setError("يرجى رفع ملف بصيغة PDF فقط.");
+        return;
+    }
 
     const formData = new FormData();
     formData.append('file', file);
 
     setIsLoading(true);
+    setError(null);
+
     try {
-      // 1. إرسال الملف للباك إند
       const { data } = await api.post('/parse-cv-pdf/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 
-      // 2. النجاح! البيانات رجعت
-      console.log("Extracted Data:", data.cv_data);
+      console.log("Extracted Data:", data);
 
-      // 3. التوجيه لصفحة المحرر مع الـ ID
-      // صفحة المحرر هتفتح وتسحب البيانات دي من الـ Job ID
-      router.push(`/cv-editor/${data.job_id}`);
+      if (data.job_id) {
+          // 1. لو المستخدم مسجل والباك إند عمل Job
+          router.push(`/cv-editor/${data.job_id}`);
+      } else {
+          // 2. لو المستخدم زائر (Guest)
+          // نخزن البيانات المستخرجة في LocalStorage عشان لما يسجل دخول نلاقيها
+          localStorage.setItem('pending_cv_data', JSON.stringify(data.cv_data));
+          
+          // نوجهه لصفحة التسجيل مع بارامتر يقولنا إن فيه CV جاهز
+          router.push('/login?redirect=cv-import');
+      }
 
-    } catch (error) {
-      alert("فشل تحليل الملف، يرجى المحاولة مرة أخرى");
+    } catch (error: any) {
+      console.error("Upload Error:", error);
+      setError(error.response?.data?.error || "فشل تحليل الملف، يرجى المحاولة مرة أخرى");
     } finally {
       setIsLoading(false);
+      event.target.value = '';
     }
   };
 

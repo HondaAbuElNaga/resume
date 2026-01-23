@@ -745,3 +745,28 @@ ERROR 2026-01-23 04:08:07,109 cv_views 11060 2624 PDF Parsing Failed: Resume Par
 ERROR 2026-01-23 04:09:17,720 cv_views 11060 14596 PDF Parsing Failed: Resume Parsing Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
 ERROR 2026-01-23 04:14:14,148 cv_views 17224 18204 PDF Parsing Failed: Resume Parsing Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
 ERROR 2026-01-23 04:15:50,011 cv_views 18320 18212 PDF Parsing Failed: Resume Parsing Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2026-01-23 17:34:37,583 cv_views 19112 7320 PDF Parsing Failed: null value in column "owner_id" of relation "core_project" violates not-null constraint
+DETAIL:  Failing row contains (b582ad9f-b6a0-43f2-b598-f66a5c8b7221, Imported CV - ⁄„— Œ«·œ «·ÂÊ”«ÊÌ, , f, 2026-01-23 14:34:37.474967+00, 2026-01-23 14:34:37.475023+00, main.tex, null).
+
+ERROR 2026-01-23 17:34:58,356 cv_views 19112 17900 PDF Parsing Failed: null value in column "owner_id" of relation "core_project" violates not-null constraint
+DETAIL:  Failing row contains (b1f5c221-47cf-4189-9ef9-abada51f756c, Imported CV - ⁄„— Œ«·œ «·ÂÊ”«ÊÌ, , f, 2026-01-23 14:34:58.263264+00, 2026-01-23 14:34:58.263279+00, main.tex, null).
+
+INFO 2026-01-23 23:22:18,535 compile_tasks 8456 952 Starting compilation for job 5d3cbd52-0fa6-461d-b9f4-f82da2927dcb
+INFO 2026-01-23 23:22:18,794 compile_tasks 8456 952 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpmd_qc2hz
+INFO 2026-01-23 23:22:18,798 compile_tasks 8456 952 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpmd_qc2hz\cv.tex
+INFO 2026-01-23 23:22:18,822 compile_tasks 8456 952 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-23 23:22:18,822 compile_tasks 8456 952 Running Tectonic for job 5d3cbd52-0fa6-461d-b9f4-f82da2927dcb
+INFO 2026-01-23 23:22:25,946 compile_tasks 8456 952 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpmd_qc2hz\cv.pdf` (11.51 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-23 23:22:25,949 compile_tasks 8456 952 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:166: Overfull \hbox (531.3331pt too wide) in paragraph at lines 164--166
+warning: cv.tex:166: Overfull \hbox (531.3331pt too wide) in paragraph at lines 164--166
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-23 23:22:25,951 compile_tasks 8456 952 PDF generated: 11788 bytes
+INFO 2026-01-23 23:22:25,963 compile_tasks 8456 952 PDF saved: /media/cvs/5d3cbd52-0fa6-461d-b9f4-f82da2927dcb/cv.pdf
+INFO 2026-01-23 23:22:26,056 compile_tasks 8456 952 Job 5d3cbd52-0fa6-461d-b9f4-f82da2927dcb completed successfully

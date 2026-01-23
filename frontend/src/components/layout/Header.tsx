@@ -3,14 +3,14 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { useQuery } from "@tanstack/react-query"; // ✅ 1. استيراد useQuery
-import api from "@/lib/api"; // ✅ استيراد api
+import { useQuery } from "@tanstack/react-query"; // ✅ 1. Import useQuery
+import api from "@/lib/api"; // ✅ Import api
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  // ✅ 2. التحقق من حالة المستخدم
+  // ✅ 2. Check user authentication status
   const { data: user } = useQuery({
     queryKey: ['user-profile'],
     queryFn: async () => {
@@ -23,7 +23,7 @@ export default function Header() {
     retry: false,
   });
 
-  const isLoggedIn = !!user; // true لو مسجل
+  const isLoggedIn = !!user; // true if logged in
 
   const hideHeaderPaths = ["/login", "/register", "/signup"];
   
@@ -69,7 +69,7 @@ export default function Header() {
           من نحن
         </Link>
         
-        {/* ✅ 3. الشرط: اعرض أزرار الدخول فقط لو المستخدم مش مسجل */}
+        {/* ✅ 3. Condition: Show login buttons only if user is not logged in */}
         {!isLoggedIn ? (
           <>
             <div className="w-px h-6 bg-gray-200 mx-2"></div>
@@ -93,7 +93,7 @@ export default function Header() {
             </Link>
           </>
         ) : (
-          // ✅ 4. (اختياري) لو مسجل، ممكن تعرض زرار للداشبورد بدالهم
+          // ✅ 4. (Optional) If logged in, show dashboard button instead
           <Link 
             href="/dashboard" 
             className="px-5 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-all flex items-center gap-2 shadow-sm mr-2"
@@ -104,7 +104,7 @@ export default function Header() {
         )}
       </nav>
 
-      {/* زرار الموبايل */}
+      {/* Mobile menu button */}
       <button 
         className="md:hidden p-2 text-gray-700 hover:text-black hover:bg-gray-100 rounded-lg transition-all"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -120,14 +120,14 @@ export default function Header() {
         )}
       </button>
 
-      {/* منيو الموبايل (معدلة أيضاً) */}
+      {/* Mobile menu (also updated) */}
       {mobileMenuOpen && (
         <div className="absolute top-full right-0 left-0 bg-white border-t border-gray-100 shadow-lg md:hidden">
           <nav className="flex flex-col p-4 gap-2" style={{ fontFamily: "'Zain', sans-serif" }}>
             <Link href="/#about" className="px-4 py-3 text-gray-700 hover:text-black text-right" onClick={() => setMobileMenuOpen(false)}>المميزات</Link>
             <Link href="/templates" className="px-4 py-3 text-gray-700 hover:text-black text-right" onClick={() => setMobileMenuOpen(false)}>القوالب</Link>
             
-            {/* ✅ نفس الشرط للموبايل */}
+            {/* ✅ Same condition for mobile */}
             {!isLoggedIn ? (
               <>
                 <Link href="/login" className="px-4 py-3 text-gray-700 hover:text-black text-right" onClick={() => setMobileMenuOpen(false)}>تسجيل الدخول</Link>

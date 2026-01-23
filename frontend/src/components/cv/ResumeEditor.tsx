@@ -16,7 +16,7 @@ interface ContactInfo {
 interface EducationEntry {
   degree: string;
   institution: string;
-  date_range?: string; // ✅ التسمية الصحيحة بدلاً من graduation_date
+  date_range?: string; // ✅ Correct naming instead of graduation_date
   location?: string;
   gpa?: string;
   details?: string[];

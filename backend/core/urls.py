@@ -5,6 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from . import cv_views
 from .cv_views import parse_cv_from_pdf
+from .cv_views import save_imported_cv
 
 # 1. Import ViewSets and Auth Views
 from .views import (
@@ -69,6 +70,8 @@ urlpatterns = [
     # endpoint for user data
     path('api/users/me/', cv_views.get_current_user, name='current-user'),
     # New Endpoint for PDF Upload
-    path('api/parse-cv-pdf/', parse_cv_from_pdf, name='parse-cv-pdf')
+    path('api/parse-cv-pdf/', parse_cv_from_pdf, name='parse-cv-pdf'),
+    path('api/save-imported-cv/', save_imported_cv, name='save-imported-cv'),
+    
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

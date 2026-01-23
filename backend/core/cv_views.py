@@ -78,73 +78,109 @@ import io
 # ... (الاستيرادات السابقة)
 
 @api_view(['POST'])
-@permission_classes([AllowAny]) # نسمح للزوار بتجربة الميزة
+@permission_classes([AllowAny]) # مسموح للجميع
 def parse_cv_from_pdf(request):
     """
-    استلام ملف PDF واستخراج البيانات منه وتحويلها لـ JSON
+    استلام ملف PDF واستخراج البيانات منه
     """
-    # 1. التحقق من وجود الملف
     if 'file' not in request.FILES:
         return Response({'error': 'No file provided'}, status=status.HTTP_400_BAD_REQUEST)
     
     pdf_file = request.FILES['file']
     
-    # 2. التحقق من الامتداد
-    if not pdf_file.name.endswith('.pdf'):
-        return Response({'error': 'File must be a PDF'}, status=status.HTTP_400_BAD_REQUEST)
-
     try:
-        # 3. استخراج النص من الـ PDF
+        # 1. قراءة الملف واستخراج النص
         reader = PdfReader(io.BytesIO(pdf_file.read()))
         raw_text = ""
         for page in reader.pages:
             raw_text += page.extract_text() + "\n"
             
         if len(raw_text.strip()) < 50:
-            return Response({'error': 'لم نتمكن من قراءة النص من الملف. قد يكون صورة.'}, status=400)
+            return Response({'error': 'لم نتمكن من قراءة النص، الملف قد يكون صورة.'}, status=400)
 
-        # 4. استدعاء OpenAI لتحليل النص
+        # 2. تحليل النص بالذكاء الاصطناعي
         openai_service = OpenAIService()
-        
-        # نستخدم الـ Schema الافتراضية
         from core.schemas.classic import ClassicArabicCVSchema
-        
         structured_data = openai_service.parse_resume_text(raw_text, ClassicArabicCVSchema)
         
-        # 5. تحويل البيانات لـ Dict
+        # 3. تجهيز البيانات
         cv_data = structured_data.model_dump()
-        
-        # إضافة ID القالب الافتراضي لو مش موجود
         default_template = LaTeXTemplate.objects.filter(is_active=True).first()
         cv_data['template_id'] = str(default_template.id) if default_template else None
 
-        # 6. إنشاء Job مؤقت (اختياري) أو إرجاع البيانات للفرونت فوراً
-        # هنا سنقوم بإنشاء مشروع وسجل فوراً لتسهيل الأمر
+        # 4. معالجة التخزين حسب حالة المستخدم (الحل هنا ✅)
+        if request.user.is_authenticated:
+            # -- الحالة الأولى: مستخدم مسجل --
+            # ننشئ له مشروع ونحفظه في الداتابيز عادي
+            project = Project.objects.create(
+                name=f"Imported CV - {cv_data.get('full_name', 'User')}",
+                owner=request.user 
+            )
+            
+            job = CompileJob.objects.create(
+                project=project,
+                triggered_by=request.user,
+                status='SUCCESS',
+                cv_data=cv_data
+            )
+            
+            return Response({
+                'success': True,
+                'job_id': str(job.id),  # بنرجع الـ ID عشان المحرر يفتحه
+                'cv_data': cv_data,
+                'is_guest': False
+            })
+            
+        else:
+            # -- الحالة الثانية: زائر (Guest) --
+            # 🛑 لا ننشئ مشروع في الداتابيز لتجنب خطأ الـ owner_id null
+            # نرجع البيانات بس، والفرونت يخزنها عنده مؤقتاً
+            return Response({
+                'success': True,
+                'job_id': None,  # مفيش ID لأنه متسجلش
+                'cv_data': cv_data,
+                'is_guest': True
+            })
+
+    except Exception as e:
+        # طباعة الخطأ في التيرمينال عشان نشوفه لو حصل حاجة تانية
+        print(f"Server Error in PDF Parsing: {e}")
+        return Response({'error': f'فشل تحليل الملف: {str(e)}'}, status=500)
+# في ملف cv_views.py
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated]) # لازم يكون مسجل دخول طبعاً
+def save_imported_cv(request):
+    """
+    حفظ البيانات المستوردة (من LocalStorage) كمشروع جديد للمستخدم
+    """
+    try:
+        cv_data = request.data.get('cv_data')
         
-        is_auth = request.user.is_authenticated
-        
+        if not cv_data:
+            return Response({'error': 'No data provided'}, status=400)
+
+        # إنشاء المشروع
         project = Project.objects.create(
-            name=f"Imported CV - {cv_data.get('full_name', 'Unknown')}",
-            owner=request.user if is_auth else None
+            name=f"Imported CV - {cv_data.get('full_name', 'User')}",
+            owner=request.user 
         )
         
+        # إنشاء الـ Job
         job = CompileJob.objects.create(
             project=project,
-            triggered_by=request.user if is_auth else None,
-            status='SUCCESS', # نعتبرها ناجحة كبيانات
+            triggered_by=request.user,
+            status='SUCCESS', # نعتبرها ناجحة لأن البيانات جاهزة
             cv_data=cv_data
         )
 
         return Response({
             'success': True,
-            'job_id': str(job.id),
-            'cv_data': cv_data,
-            'message': 'تم استخراج البيانات بنجاح'
+            'job_id': str(job.id)
         })
 
     except Exception as e:
-        logger.error(f"PDF Parsing Failed: {str(e)}")
-        return Response({'error': f'فشل تحليل الملف: {str(e)}'}, status=500)
+        return Response({'error': str(e)}, status=500)
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])

@@ -12,6 +12,8 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from .models import Project, ProjectFile, CompileJob
 from .serializers import ProjectSerializer, ProjectFileSerializer
 from .tasks.compile_tasks import compile_latex_to_pdf
+from django.db.models import Prefetch, Subquery, OuterRef
+
 
 User = get_user_model()
 
@@ -237,19 +239,32 @@ def custom_social_signup(request):
 # ==========================================
 
 class ProjectViewSet(viewsets.ModelViewSet):
-    """
-    CRUD for Projects (إنشاء، عرض، تعديل، حذف المشاريع).
-    يقوم بفلترة المشاريع بحيث يرى كل مستخدم مشاريعه فقط.
-    """
     permission_classes = [permissions.IsAuthenticated]
     serializer_class = ProjectSerializer
 
     def get_queryset(self):
-        # Security: يرجع فقط المشاريع الخاصة بالمستخدم الحالي
-        return Project.objects.filter(owner=self.request.user)
+        # ✅ Subquery لجلب آخر job_id
+        latest_job = CompileJob.objects.filter(
+            project=OuterRef('pk')
+        ).order_by('-created_at').values('id')[:1]
+        
+        return Project.objects.filter(
+            owner=self.request.user
+        ).annotate(
+            _latest_job_id=Subquery(latest_job),
+            _latest_job_status=Subquery(
+                CompileJob.objects.filter(
+                    project=OuterRef('pk')
+                ).order_by('-created_at').values('status')[:1]
+            ),
+            _latest_pdf_url=Subquery(
+                CompileJob.objects.filter(
+                    project=OuterRef('pk')
+                ).order_by('-created_at').values('pdf_url')[:1]
+            )
+        ).select_related('owner').prefetch_related('compile_jobs')
 
     def perform_create(self, serializer):
-        # عند إنشاء مشروع جديد، نربطه تلقائياً بالمستخدم المسجل دخول
         serializer.save(owner=self.request.user)
 
 
