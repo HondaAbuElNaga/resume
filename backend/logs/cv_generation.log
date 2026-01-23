@@ -1,0 +1,747 @@
+INFO 2025-12-21 02:58:25,213 cv_views 3680 13024 Templates cached: 1 templates
+INFO 2025-12-21 03:04:15,496 cv_views 9660 9884 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 0/10
+ERROR 2025-12-21 03:04:16,450 cv_views 9660 9884 OpenAI extraction failed for user effbd793-499f-45c7-8d49-2d1f8e751867: 'LaTeXService' object has no attribute 'get_schema_class'
+INFO 2025-12-21 03:06:56,919 cv_views 9660 2468 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 0/10
+ERROR 2025-12-21 03:06:57,944 cv_views 9660 2468 OpenAI extraction failed for user effbd793-499f-45c7-8d49-2d1f8e751867: 'LaTeXService' object has no attribute 'get_schema_class'
+INFO 2025-12-22 00:47:45,387 cv_views 17380 17308 Templates cached: 1 templates
+INFO 2025-12-22 00:48:54,716 cv_views 17380 12256 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 0/10
+ERROR 2025-12-22 00:48:56,139 cv_views 17380 12256 OpenAI extraction failed for user effbd793-499f-45c7-8d49-2d1f8e751867: 'LaTeXService' object has no attribute 'get_schema_class'
+INFO 2025-12-22 00:58:50,596 cv_views 1696 10840 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 0/10
+ERROR 2025-12-22 00:58:52,113 cv_views 1696 10840 OpenAI extraction failed for user effbd793-499f-45c7-8d49-2d1f8e751867: cannot import name 'get_schema_by_name' from 'core.schemas' (E:\esay_cv\backend\core\schemas\__init__.py)
+INFO 2025-12-23 00:44:23,445 cv_views 15120 16964 Templates cached: 1 templates
+INFO 2025-12-23 00:45:01,033 cv_views 15120 4676 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 0/10
+INFO 2025-12-23 00:45:02,064 cv_views 15120 4676 Extracting CV data for user effbd793-499f-45c7-8d49-2d1f8e751867 with template „ ﬁœ„
+ERROR 2025-12-23 00:45:11,870 cv_views 15120 4676 OpenAI extraction failed for user effbd793-499f-45c7-8d49-2d1f8e751867: 'ClassicArabicCVSchema' object does not support item assignment
+INFO 2025-12-23 00:46:07,270 cv_views 15120 8532 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 0/10
+INFO 2025-12-23 00:46:08,160 cv_views 15120 8532 Extracting CV data for user effbd793-499f-45c7-8d49-2d1f8e751867 with template „ ﬁœ„
+ERROR 2025-12-23 00:46:13,243 cv_views 15120 8532 OpenAI extraction failed for user effbd793-499f-45c7-8d49-2d1f8e751867: 'ClassicArabicCVSchema' object does not support item assignment
+INFO 2025-12-23 00:49:47,959 cv_views 12380 412 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 0/10
+INFO 2025-12-23 00:49:49,108 cv_views 12380 412 Extracting CV data for user effbd793-499f-45c7-8d49-2d1f8e751867 with template „ ﬁœ„
+INFO 2025-12-23 00:49:59,413 cv_views 12380 412 Project created: 20fdc712-dc9e-4cc8-83fc-19cb220d17f8
+INFO 2025-12-23 00:49:59,528 cv_views 12380 412 CompileJob created: e467f0b6-64dc-43fc-b842-776c699a4054
+INFO 2025-12-23 00:49:59,627 compile_tasks 12380 412 Starting compilation for job e467f0b6-64dc-43fc-b842-776c699a4054
+INFO 2025-12-23 00:49:59,848 compile_tasks 12380 412 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpghowr8kf
+INFO 2025-12-23 00:49:59,851 compile_tasks 12380 412 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpghowr8kf\cv.tex
+INFO 2025-12-23 00:49:59,853 compile_tasks 12380 412 Running Tectonic for job e467f0b6-64dc-43fc-b842-776c699a4054
+INFO 2025-12-23 00:50:04,965 compile_tasks 12380 412 Tectonic stdout: note: Running TeX ...
+
+WARNING 2025-12-23 00:50:04,966 compile_tasks 12380 412 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+error: cv.tex:23: Package fontspec Error: The font "Tajawal-Medium 500" cannot be found.
+
+For immediate help type H <return>
+error: halted on potentially-recoverable error as specified
+
+ERROR 2025-12-23 00:50:04,968 compile_tasks 12380 412 Compilation failed for job e467f0b6-64dc-43fc-b842-776c699a4054: Tectonic failed with code 1: Fontconfig error: Cannot load default config file: No such file: (null)
+error: cv.tex:23: Package fontspec Error: The font "Tajawal-Medium 500" cannot be found.
+
+For immediate help type H <return>
+error: halted on potentially-recoverable error as specified
+
+ERROR 2025-12-23 00:50:04,971 compile_tasks 12380 412 Job e467f0b6-64dc-43fc-b842-776c699a4054 failed: Tectonic failed with code 1: Fontconfig error: Cannot load default config file: No such file: (null)
+error: cv.tex:23: Package fontspec Error: The font "Tajawal-Medium 500" cannot be found.
+
+For immediate help type H <return>
+error: halted on potentially-recoverable error as specified
+Traceback (most recent call last):
+  File "E:\esay_cv\backend\core\tasks\compile_tasks.py", line 114, in compile_latex_to_pdf
+    raise Exception(error_msg)
+Exception: Tectonic failed with code 1: Fontconfig error: Cannot load default config file: No such file: (null)
+error: cv.tex:23: Package fontspec Error: The font "Tajawal-Medium 500" cannot be found.
+
+For immediate help type H <return>
+error: halted on potentially-recoverable error as specified
+
+ERROR 2025-12-23 00:50:05,175 compile_tasks 12380 412 Job e467f0b6-64dc-43fc-b842-776c699a4054 failed: Tectonic failed with code 1: Fontconfig error: Cannot load default config file: No such file: (null)
+error: cv.tex:23: Package fontspec Error: The font "Tajawal-Medium 500" cannot be found.
+
+For immediate help type H <return>
+error: halted on potentially-recoverable error as specified
+
+INFO 2025-12-23 00:50:05,581 cv_views 12380 412 Celery task queued: df2317c4-d267-4cce-9d15-4a0f23a64cf9 for job e467f0b6-64dc-43fc-b842-776c699a4054
+INFO 2025-12-23 01:03:27,804 cv_views 5408 972 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 1/10
+INFO 2025-12-23 01:03:29,158 cv_views 5408 972 Extracting CV data for user effbd793-499f-45c7-8d49-2d1f8e751867 with template „ ﬁœ„
+INFO 2025-12-23 01:03:36,959 cv_views 5408 972 Project created: 604c6426-af61-4b2a-b052-beb6b7d8c107
+INFO 2025-12-23 01:03:37,072 cv_views 5408 972 CompileJob created: 7dbe243a-95ce-470c-9a3c-3133f464f3bc
+INFO 2025-12-23 01:03:37,175 compile_tasks 5408 972 Starting compilation for job 7dbe243a-95ce-470c-9a3c-3133f464f3bc
+INFO 2025-12-23 01:03:37,380 compile_tasks 5408 972 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp9imapb5u
+INFO 2025-12-23 01:03:37,382 compile_tasks 5408 972 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp9imapb5u\cv.tex
+INFO 2025-12-23 01:03:37,391 compile_tasks 5408 972 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 01:03:37,399 compile_tasks 5408 972 Running Tectonic for job 7dbe243a-95ce-470c-9a3c-3133f464f3bc
+INFO 2025-12-23 01:03:42,728 compile_tasks 5408 972 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp9imapb5u\cv.pdf` (11.34 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 01:03:42,730 compile_tasks 5408 972 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:151: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--151
+warning: cv.tex:151: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--151
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 01:03:42,732 compile_tasks 5408 972 PDF generated: 11610 bytes
+INFO 2025-12-23 01:03:42,735 compile_tasks 5408 972 PDF saved: /media/cvs/7dbe243a-95ce-470c-9a3c-3133f464f3bc/cv.pdf
+INFO 2025-12-23 01:03:42,840 compile_tasks 5408 972 Job 7dbe243a-95ce-470c-9a3c-3133f464f3bc completed successfully
+INFO 2025-12-23 01:03:43,235 cv_views 5408 972 Celery task queued: 83affbe7-b9a2-41ca-8068-4d9be584b669 for job 7dbe243a-95ce-470c-9a3c-3133f464f3bc
+INFO 2025-12-23 01:55:08,799 cv_views 16908 12876 Templates cached: 1 templates
+INFO 2025-12-23 01:56:28,762 cv_views 16908 13736 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 2/10
+INFO 2025-12-23 01:56:30,110 cv_views 16908 13736 Extracting CV data for user effbd793-499f-45c7-8d49-2d1f8e751867 with template „ ﬁœ„
+INFO 2025-12-23 01:56:51,182 cv_views 16908 13736 Project created: 0c25a297-606c-435c-a7cb-c30ce7781a40
+INFO 2025-12-23 01:56:51,287 cv_views 16908 13736 CompileJob created: b39a1d10-9335-4e18-86a9-30843b1f62ec
+INFO 2025-12-23 01:56:51,413 compile_tasks 16908 13736 Starting compilation for job b39a1d10-9335-4e18-86a9-30843b1f62ec
+INFO 2025-12-23 01:56:51,625 compile_tasks 16908 13736 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpm9wycrlg
+INFO 2025-12-23 01:56:51,628 compile_tasks 16908 13736 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpm9wycrlg\cv.tex
+INFO 2025-12-23 01:56:51,632 compile_tasks 16908 13736 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 01:56:51,632 compile_tasks 16908 13736 Running Tectonic for job b39a1d10-9335-4e18-86a9-30843b1f62ec
+INFO 2025-12-23 01:56:59,327 compile_tasks 16908 13736 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpm9wycrlg\cv.pdf` (11.34 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 01:56:59,331 compile_tasks 16908 13736 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:151: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--151
+warning: cv.tex:151: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--151
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 01:56:59,334 compile_tasks 16908 13736 PDF generated: 11610 bytes
+INFO 2025-12-23 01:56:59,338 compile_tasks 16908 13736 PDF saved: /media/cvs/b39a1d10-9335-4e18-86a9-30843b1f62ec/cv.pdf
+INFO 2025-12-23 01:56:59,458 compile_tasks 16908 13736 Job b39a1d10-9335-4e18-86a9-30843b1f62ec completed successfully
+INFO 2025-12-23 01:56:59,800 cv_views 16908 13736 Celery task queued: 252276ba-5c13-47aa-988c-50cce7e8f99e for job b39a1d10-9335-4e18-86a9-30843b1f62ec
+INFO 2025-12-23 01:57:18,311 compile_tasks 16908 4476 Starting compilation for job 67b6510f-7ece-4534-b8db-495a3349d4e6
+INFO 2025-12-23 01:57:18,596 compile_tasks 16908 4476 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpuxqr7zfp
+INFO 2025-12-23 01:57:18,598 compile_tasks 16908 4476 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpuxqr7zfp\cv.tex
+INFO 2025-12-23 01:57:18,603 compile_tasks 16908 4476 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 01:57:18,604 compile_tasks 16908 4476 Running Tectonic for job 67b6510f-7ece-4534-b8db-495a3349d4e6
+INFO 2025-12-23 01:57:23,084 compile_tasks 16908 4476 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpuxqr7zfp\cv.pdf` (11.95 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 01:57:23,086 compile_tasks 16908 4476 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:151: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--151
+warning: cv.tex:151: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--151
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 01:57:23,088 compile_tasks 16908 4476 PDF generated: 12232 bytes
+INFO 2025-12-23 01:57:23,092 compile_tasks 16908 4476 PDF saved: /media/cvs/67b6510f-7ece-4534-b8db-495a3349d4e6/cv.pdf
+INFO 2025-12-23 01:57:23,232 compile_tasks 16908 4476 Job 67b6510f-7ece-4534-b8db-495a3349d4e6 completed successfully
+INFO 2025-12-23 01:57:23,471 cv_views 16908 4476 CV updated: new job 67b6510f-7ece-4534-b8db-495a3349d4e6 created from old job b39a1d10-9335-4e18-86a9-30843b1f62ec
+INFO 2025-12-23 01:58:28,080 compile_tasks 16908 19340 Starting compilation for job 13a52f62-60ea-493c-bb8e-289d4025b267
+INFO 2025-12-23 01:58:28,366 compile_tasks 16908 19340 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpf9lrczyy
+INFO 2025-12-23 01:58:28,368 compile_tasks 16908 19340 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpf9lrczyy\cv.tex
+INFO 2025-12-23 01:58:28,375 compile_tasks 16908 19340 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 01:58:28,377 compile_tasks 16908 19340 Running Tectonic for job 13a52f62-60ea-493c-bb8e-289d4025b267
+INFO 2025-12-23 01:58:33,131 compile_tasks 16908 19340 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpf9lrczyy\cv.pdf` (12.13 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 01:58:33,134 compile_tasks 16908 19340 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:151: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--151
+warning: cv.tex:151: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--151
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 01:58:33,139 compile_tasks 16908 19340 PDF generated: 12417 bytes
+INFO 2025-12-23 01:58:33,147 compile_tasks 16908 19340 PDF saved: /media/cvs/13a52f62-60ea-493c-bb8e-289d4025b267/cv.pdf
+INFO 2025-12-23 01:58:33,257 compile_tasks 16908 19340 Job 13a52f62-60ea-493c-bb8e-289d4025b267 completed successfully
+INFO 2025-12-23 01:58:33,475 cv_views 16908 19340 CV updated: new job 13a52f62-60ea-493c-bb8e-289d4025b267 created from old job 67b6510f-7ece-4534-b8db-495a3349d4e6
+INFO 2025-12-23 02:11:18,924 cv_views 17652 13796 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 5/10
+INFO 2025-12-23 02:11:20,440 cv_views 17652 13796 Extracting CV data for user effbd793-499f-45c7-8d49-2d1f8e751867 with template „ ﬁœ„
+INFO 2025-12-23 02:11:30,692 cv_views 17652 13796 Project created: ced756a1-3c27-4859-a7f4-eb310f0c633f
+INFO 2025-12-23 02:11:30,801 cv_views 17652 13796 CompileJob created: 95b63359-e9f6-4010-9c5c-12e3d330bd52
+INFO 2025-12-23 02:11:30,935 compile_tasks 17652 13796 Starting compilation for job 95b63359-e9f6-4010-9c5c-12e3d330bd52
+INFO 2025-12-23 02:11:31,173 compile_tasks 17652 13796 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp9n88pxc2
+INFO 2025-12-23 02:11:31,176 compile_tasks 17652 13796 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp9n88pxc2\cv.tex
+INFO 2025-12-23 02:11:31,185 compile_tasks 17652 13796 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:11:31,190 compile_tasks 17652 13796 Running Tectonic for job 95b63359-e9f6-4010-9c5c-12e3d330bd52
+INFO 2025-12-23 02:11:36,789 compile_tasks 17652 13796 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp9n88pxc2\cv.pdf` (11.57 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:11:36,791 compile_tasks 17652 13796 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:150: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--150
+warning: cv.tex:150: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--150
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 02:11:36,794 compile_tasks 17652 13796 PDF generated: 11848 bytes
+INFO 2025-12-23 02:11:36,799 compile_tasks 17652 13796 PDF saved: /media/cvs/95b63359-e9f6-4010-9c5c-12e3d330bd52/cv.pdf
+INFO 2025-12-23 02:11:36,925 compile_tasks 17652 13796 Job 95b63359-e9f6-4010-9c5c-12e3d330bd52 completed successfully
+INFO 2025-12-23 02:11:37,231 cv_views 17652 13796 Celery task queued: 8f6fe8ea-0b05-4b4a-9c8d-aab2d5edccd4 for job 95b63359-e9f6-4010-9c5c-12e3d330bd52
+INFO 2025-12-23 02:13:10,798 compile_tasks 17652 1548 Starting compilation for job 50386314-caeb-4501-b634-b228fa506050
+INFO 2025-12-23 02:13:10,996 compile_tasks 17652 1548 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp0lgpxbl5
+INFO 2025-12-23 02:13:10,999 compile_tasks 17652 1548 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp0lgpxbl5\cv.tex
+INFO 2025-12-23 02:13:11,003 compile_tasks 17652 1548 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:13:11,004 compile_tasks 17652 1548 Running Tectonic for job 50386314-caeb-4501-b634-b228fa506050
+INFO 2025-12-23 02:13:15,637 compile_tasks 17652 1548 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp0lgpxbl5\cv.pdf` (11.42 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:13:15,641 compile_tasks 17652 1548 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:150: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--150
+warning: cv.tex:150: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--150
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 02:13:15,642 compile_tasks 17652 1548 PDF generated: 11695 bytes
+INFO 2025-12-23 02:13:15,646 compile_tasks 17652 1548 PDF saved: /media/cvs/50386314-caeb-4501-b634-b228fa506050/cv.pdf
+INFO 2025-12-23 02:13:15,739 compile_tasks 17652 1548 Job 50386314-caeb-4501-b634-b228fa506050 completed successfully
+INFO 2025-12-23 02:13:15,941 cv_views 17652 1548 CV updated: new job 50386314-caeb-4501-b634-b228fa506050 created from old job 95b63359-e9f6-4010-9c5c-12e3d330bd52
+INFO 2025-12-23 02:18:26,928 cv_views 3912 1084 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 7/10
+INFO 2025-12-23 02:18:28,007 cv_views 3912 1084 Extracting CV data for user effbd793-499f-45c7-8d49-2d1f8e751867 with template „ ﬁœ„
+INFO 2025-12-23 02:18:37,050 cv_views 3912 1084 Project created: 633d0e5b-eb06-4352-97c4-88b844168be3
+INFO 2025-12-23 02:18:37,146 cv_views 3912 1084 CompileJob created: 82eb899c-db6b-4c42-bcfa-3a18ec450993
+INFO 2025-12-23 02:18:37,259 compile_tasks 3912 1084 Starting compilation for job 82eb899c-db6b-4c42-bcfa-3a18ec450993
+INFO 2025-12-23 02:18:37,465 compile_tasks 3912 1084 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp73l4edgt
+INFO 2025-12-23 02:18:37,467 compile_tasks 3912 1084 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp73l4edgt\cv.tex
+INFO 2025-12-23 02:18:37,470 compile_tasks 3912 1084 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:18:37,471 compile_tasks 3912 1084 Running Tectonic for job 82eb899c-db6b-4c42-bcfa-3a18ec450993
+INFO 2025-12-23 02:18:42,073 compile_tasks 3912 1084 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp73l4edgt\cv.pdf` (11.86 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:18:42,078 compile_tasks 3912 1084 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:150: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--150
+warning: cv.tex:150: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--150
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 02:18:42,080 compile_tasks 3912 1084 PDF generated: 12142 bytes
+INFO 2025-12-23 02:18:42,086 compile_tasks 3912 1084 PDF saved: /media/cvs/82eb899c-db6b-4c42-bcfa-3a18ec450993/cv.pdf
+INFO 2025-12-23 02:18:42,180 compile_tasks 3912 1084 Job 82eb899c-db6b-4c42-bcfa-3a18ec450993 completed successfully
+INFO 2025-12-23 02:18:42,474 cv_views 3912 1084 Celery task queued: 2b5b4ef4-2c16-4fdb-bfde-64c21fa086f4 for job 82eb899c-db6b-4c42-bcfa-3a18ec450993
+INFO 2025-12-23 02:22:11,884 cv_views 16868 11484 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 8/10
+INFO 2025-12-23 02:22:13,162 cv_views 16868 11484 Extracting CV data for user effbd793-499f-45c7-8d49-2d1f8e751867 with template „ ﬁœ„
+INFO 2025-12-23 02:22:23,639 cv_views 16868 11484 Project created: 90b80824-d9bf-458e-aea2-acef7aae3c35
+INFO 2025-12-23 02:22:23,735 cv_views 16868 11484 CompileJob created: 944225a8-7bab-45cc-9327-48e2fb6b34b1
+INFO 2025-12-23 02:22:23,877 compile_tasks 16868 11484 Starting compilation for job 944225a8-7bab-45cc-9327-48e2fb6b34b1
+INFO 2025-12-23 02:22:24,067 compile_tasks 16868 11484 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpene_ndsn
+INFO 2025-12-23 02:22:24,075 compile_tasks 16868 11484 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpene_ndsn\cv.tex
+INFO 2025-12-23 02:22:24,079 compile_tasks 16868 11484 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:22:24,083 compile_tasks 16868 11484 Running Tectonic for job 944225a8-7bab-45cc-9327-48e2fb6b34b1
+INFO 2025-12-23 02:22:29,560 compile_tasks 16868 11484 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpene_ndsn\cv.pdf` (12.18 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:22:29,562 compile_tasks 16868 11484 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:150: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--150
+warning: cv.tex:150: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--150
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 02:22:29,564 compile_tasks 16868 11484 PDF generated: 12469 bytes
+INFO 2025-12-23 02:22:29,568 compile_tasks 16868 11484 PDF saved: /media/cvs/944225a8-7bab-45cc-9327-48e2fb6b34b1/cv.pdf
+INFO 2025-12-23 02:22:29,713 compile_tasks 16868 11484 Job 944225a8-7bab-45cc-9327-48e2fb6b34b1 completed successfully
+INFO 2025-12-23 02:22:30,015 cv_views 16868 11484 Celery task queued: d6a44176-00b1-40db-badd-439e644b4ceb for job 944225a8-7bab-45cc-9327-48e2fb6b34b1
+INFO 2025-12-23 02:23:49,469 cv_views 16868 18576 User effbd793-499f-45c7-8d49-2d1f8e751867 CV generation request. Daily count: 9/10
+INFO 2025-12-23 02:23:50,662 cv_views 16868 18576 Extracting CV data for user effbd793-499f-45c7-8d49-2d1f8e751867 with template „ ﬁœ„
+INFO 2025-12-23 02:23:59,211 cv_views 16868 18576 Project created: 61897bc0-9da8-4018-a8d1-f620a291388a
+INFO 2025-12-23 02:23:59,380 cv_views 16868 18576 CompileJob created: 4ea5b288-7590-44f0-bfe7-5c9d4bad1fc1
+INFO 2025-12-23 02:23:59,384 compile_tasks 16868 18576 Starting compilation for job 4ea5b288-7590-44f0-bfe7-5c9d4bad1fc1
+INFO 2025-12-23 02:23:59,637 compile_tasks 16868 18576 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpddv4p4bc
+INFO 2025-12-23 02:23:59,639 compile_tasks 16868 18576 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpddv4p4bc\cv.tex
+INFO 2025-12-23 02:23:59,642 compile_tasks 16868 18576 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:23:59,643 compile_tasks 16868 18576 Running Tectonic for job 4ea5b288-7590-44f0-bfe7-5c9d4bad1fc1
+INFO 2025-12-23 02:24:04,167 compile_tasks 16868 18576 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpddv4p4bc\cv.pdf` (12.12 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:24:04,170 compile_tasks 16868 18576 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:154: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--154
+warning: cv.tex:154: Overfull \hbox (531.3331pt too wide) in paragraph at lines 148--154
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 02:24:04,172 compile_tasks 16868 18576 PDF generated: 12409 bytes
+INFO 2025-12-23 02:24:04,180 compile_tasks 16868 18576 PDF saved: /media/cvs/4ea5b288-7590-44f0-bfe7-5c9d4bad1fc1/cv.pdf
+INFO 2025-12-23 02:24:04,342 compile_tasks 16868 18576 Job 4ea5b288-7590-44f0-bfe7-5c9d4bad1fc1 completed successfully
+INFO 2025-12-23 02:24:04,742 cv_views 16868 18576 Celery task queued: 3f190d7d-64ae-4fc0-b3cb-6582ec465365 for job 4ea5b288-7590-44f0-bfe7-5c9d4bad1fc1
+INFO 2025-12-23 02:36:24,257 cv_views 18552 11400 User c9bce0c1-9dc2-4c37-a07e-3dae23a5e540 CV generation request. Daily count: 0/10
+INFO 2025-12-23 02:36:25,546 cv_views 18552 11400 Extracting CV data for user c9bce0c1-9dc2-4c37-a07e-3dae23a5e540 with template „ ﬁœ„
+INFO 2025-12-23 02:36:38,276 cv_views 18552 11400 Project created: 745bf134-1a73-4570-a0e2-e6b5119fae42
+INFO 2025-12-23 02:36:38,383 cv_views 18552 11400 CompileJob created: 391ef7e0-da85-47d0-a3ae-075f2d75ab80
+INFO 2025-12-23 02:36:38,487 compile_tasks 18552 11400 Starting compilation for job 391ef7e0-da85-47d0-a3ae-075f2d75ab80
+INFO 2025-12-23 02:36:38,695 compile_tasks 18552 11400 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmph1_r6_5o
+INFO 2025-12-23 02:36:38,698 compile_tasks 18552 11400 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmph1_r6_5o\cv.tex
+INFO 2025-12-23 02:36:38,702 compile_tasks 18552 11400 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:36:38,702 compile_tasks 18552 11400 Running Tectonic for job 391ef7e0-da85-47d0-a3ae-075f2d75ab80
+INFO 2025-12-23 02:36:43,812 compile_tasks 18552 11400 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmph1_r6_5o\cv.pdf` (11.71 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:36:43,814 compile_tasks 18552 11400 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+
+INFO 2025-12-23 02:36:43,816 compile_tasks 18552 11400 PDF generated: 11986 bytes
+INFO 2025-12-23 02:36:43,825 compile_tasks 18552 11400 PDF saved: /media/cvs/391ef7e0-da85-47d0-a3ae-075f2d75ab80/cv.pdf
+INFO 2025-12-23 02:36:43,944 compile_tasks 18552 11400 Job 391ef7e0-da85-47d0-a3ae-075f2d75ab80 completed successfully
+INFO 2025-12-23 02:36:44,320 cv_views 18552 11400 Celery task queued: 4fd58296-1cb0-460e-a0e1-ed4c69de01a8 for job 391ef7e0-da85-47d0-a3ae-075f2d75ab80
+INFO 2025-12-23 02:37:57,127 compile_tasks 18552 15248 Starting compilation for job 6eb80d50-6e8c-4976-b6d2-eb88cfddf490
+INFO 2025-12-23 02:37:57,323 compile_tasks 18552 15248 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpceq96e2r
+INFO 2025-12-23 02:37:57,325 compile_tasks 18552 15248 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpceq96e2r\cv.tex
+INFO 2025-12-23 02:37:57,329 compile_tasks 18552 15248 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:37:57,329 compile_tasks 18552 15248 Running Tectonic for job 6eb80d50-6e8c-4976-b6d2-eb88cfddf490
+INFO 2025-12-23 02:38:01,923 compile_tasks 18552 15248 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpceq96e2r\cv.pdf` (11.75 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:38:01,925 compile_tasks 18552 15248 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+
+INFO 2025-12-23 02:38:01,926 compile_tasks 18552 15248 PDF generated: 12029 bytes
+INFO 2025-12-23 02:38:01,929 compile_tasks 18552 15248 PDF saved: /media/cvs/6eb80d50-6e8c-4976-b6d2-eb88cfddf490/cv.pdf
+INFO 2025-12-23 02:38:02,048 compile_tasks 18552 15248 Job 6eb80d50-6e8c-4976-b6d2-eb88cfddf490 completed successfully
+INFO 2025-12-23 02:38:02,225 cv_views 18552 15248 CV updated: new job 6eb80d50-6e8c-4976-b6d2-eb88cfddf490 created from old job 391ef7e0-da85-47d0-a3ae-075f2d75ab80
+INFO 2025-12-23 02:38:32,817 compile_tasks 18552 15864 Starting compilation for job d27adf97-961d-4b4b-9e96-67a12a7fb7aa
+INFO 2025-12-23 02:38:33,166 compile_tasks 18552 15864 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp3zpcaab2
+INFO 2025-12-23 02:38:33,168 compile_tasks 18552 15864 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp3zpcaab2\cv.tex
+INFO 2025-12-23 02:38:33,171 compile_tasks 18552 15864 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:38:33,172 compile_tasks 18552 15864 Running Tectonic for job d27adf97-961d-4b4b-9e96-67a12a7fb7aa
+INFO 2025-12-23 02:38:37,433 compile_tasks 18552 15864 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp3zpcaab2\cv.pdf` (11.76 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:38:37,435 compile_tasks 18552 15864 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:163: Overfull \hbox (12.41847pt too wide) in paragraph at lines 158--163
+warning: cv.tex:163: Overfull \hbox (12.41847pt too wide) in paragraph at lines 158--163
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 02:38:37,437 compile_tasks 18552 15864 PDF generated: 12041 bytes
+INFO 2025-12-23 02:38:37,441 compile_tasks 18552 15864 PDF saved: /media/cvs/d27adf97-961d-4b4b-9e96-67a12a7fb7aa/cv.pdf
+INFO 2025-12-23 02:38:37,570 compile_tasks 18552 15864 Job d27adf97-961d-4b4b-9e96-67a12a7fb7aa completed successfully
+INFO 2025-12-23 02:38:37,778 cv_views 18552 15864 CV updated: new job d27adf97-961d-4b4b-9e96-67a12a7fb7aa created from old job 6eb80d50-6e8c-4976-b6d2-eb88cfddf490
+INFO 2025-12-23 02:43:04,874 compile_tasks 18552 11656 Starting compilation for job d3b5d194-ccbd-4928-91d1-902ac4b61b29
+INFO 2025-12-23 02:43:05,076 compile_tasks 18552 11656 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpy5wmej30
+INFO 2025-12-23 02:43:05,082 compile_tasks 18552 11656 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpy5wmej30\cv.tex
+INFO 2025-12-23 02:43:05,087 compile_tasks 18552 11656 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:43:05,089 compile_tasks 18552 11656 Running Tectonic for job d3b5d194-ccbd-4928-91d1-902ac4b61b29
+INFO 2025-12-23 02:43:10,102 compile_tasks 18552 11656 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpy5wmej30\cv.pdf` (11.69 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:43:10,106 compile_tasks 18552 11656 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+
+INFO 2025-12-23 02:43:10,108 compile_tasks 18552 11656 PDF generated: 11970 bytes
+INFO 2025-12-23 02:43:10,114 compile_tasks 18552 11656 PDF saved: /media/cvs/d3b5d194-ccbd-4928-91d1-902ac4b61b29/cv.pdf
+INFO 2025-12-23 02:43:10,266 compile_tasks 18552 11656 Job d3b5d194-ccbd-4928-91d1-902ac4b61b29 completed successfully
+INFO 2025-12-23 02:43:10,457 cv_views 18552 11656 CV updated: new job d3b5d194-ccbd-4928-91d1-902ac4b61b29 created from old job d27adf97-961d-4b4b-9e96-67a12a7fb7aa
+INFO 2025-12-23 02:43:26,542 compile_tasks 18552 2952 Starting compilation for job cd6dc019-f978-443e-b55e-a33b4f446ed3
+INFO 2025-12-23 02:43:26,741 compile_tasks 18552 2952 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp4crsd8sj
+INFO 2025-12-23 02:43:26,743 compile_tasks 18552 2952 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp4crsd8sj\cv.tex
+INFO 2025-12-23 02:43:26,751 compile_tasks 18552 2952 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:43:26,752 compile_tasks 18552 2952 Running Tectonic for job cd6dc019-f978-443e-b55e-a33b4f446ed3
+INFO 2025-12-23 02:43:31,397 compile_tasks 18552 2952 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp4crsd8sj\cv.pdf` (11.75 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:43:31,399 compile_tasks 18552 2952 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+
+INFO 2025-12-23 02:43:31,401 compile_tasks 18552 2952 PDF generated: 12029 bytes
+INFO 2025-12-23 02:43:31,405 compile_tasks 18552 2952 PDF saved: /media/cvs/cd6dc019-f978-443e-b55e-a33b4f446ed3/cv.pdf
+INFO 2025-12-23 02:43:31,513 compile_tasks 18552 2952 Job cd6dc019-f978-443e-b55e-a33b4f446ed3 completed successfully
+INFO 2025-12-23 02:43:31,756 cv_views 18552 2952 CV updated: new job cd6dc019-f978-443e-b55e-a33b4f446ed3 created from old job d3b5d194-ccbd-4928-91d1-902ac4b61b29
+INFO 2025-12-23 02:44:16,265 compile_tasks 18552 6708 Starting compilation for job a44cb9a4-9cbe-4b85-85df-d349a763181d
+INFO 2025-12-23 02:44:16,518 compile_tasks 18552 6708 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpil_dlw4r
+INFO 2025-12-23 02:44:16,520 compile_tasks 18552 6708 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpil_dlw4r\cv.tex
+INFO 2025-12-23 02:44:16,522 compile_tasks 18552 6708 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:44:16,524 compile_tasks 18552 6708 Running Tectonic for job a44cb9a4-9cbe-4b85-85df-d349a763181d
+INFO 2025-12-23 02:44:21,529 compile_tasks 18552 6708 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpil_dlw4r\cv.pdf` (11.73 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:44:21,530 compile_tasks 18552 6708 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+
+INFO 2025-12-23 02:44:21,531 compile_tasks 18552 6708 PDF generated: 12008 bytes
+INFO 2025-12-23 02:44:21,539 compile_tasks 18552 6708 PDF saved: /media/cvs/a44cb9a4-9cbe-4b85-85df-d349a763181d/cv.pdf
+INFO 2025-12-23 02:44:21,637 compile_tasks 18552 6708 Job a44cb9a4-9cbe-4b85-85df-d349a763181d completed successfully
+INFO 2025-12-23 02:44:21,866 cv_views 18552 6708 CV updated: new job a44cb9a4-9cbe-4b85-85df-d349a763181d created from old job cd6dc019-f978-443e-b55e-a33b4f446ed3
+INFO 2025-12-23 02:44:50,334 compile_tasks 18552 15752 Starting compilation for job 92713703-ac1c-4e50-aaf9-be9d24355715
+INFO 2025-12-23 02:44:50,527 compile_tasks 18552 15752 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpm62dhhhi
+INFO 2025-12-23 02:44:50,529 compile_tasks 18552 15752 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpm62dhhhi\cv.tex
+INFO 2025-12-23 02:44:50,537 compile_tasks 18552 15752 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-23 02:44:50,539 compile_tasks 18552 15752 Running Tectonic for job 92713703-ac1c-4e50-aaf9-be9d24355715
+INFO 2025-12-23 02:44:59,389 compile_tasks 18552 15752 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpm62dhhhi\cv.pdf` (11.88 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-23 02:44:59,397 compile_tasks 18552 15752 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-23 02:44:59,403 compile_tasks 18552 15752 PDF generated: 12167 bytes
+INFO 2025-12-23 02:44:59,408 compile_tasks 18552 15752 PDF saved: /media/cvs/92713703-ac1c-4e50-aaf9-be9d24355715/cv.pdf
+INFO 2025-12-23 02:44:59,516 compile_tasks 18552 15752 Job 92713703-ac1c-4e50-aaf9-be9d24355715 completed successfully
+INFO 2025-12-23 02:44:59,764 cv_views 18552 15752 CV updated: new job 92713703-ac1c-4e50-aaf9-be9d24355715 created from old job a44cb9a4-9cbe-4b85-85df-d349a763181d
+INFO 2025-12-24 13:45:05,961 cv_views 16560 14276 Templates cached: 1 templates
+INFO 2025-12-24 14:15:04,377 cv_views 16560 15204 User c9bce0c1-9dc2-4c37-a07e-3dae23a5e540 CV generation request. Daily count: 0/10
+INFO 2025-12-24 14:15:05,525 cv_views 16560 15204 Extracting CV data for user c9bce0c1-9dc2-4c37-a07e-3dae23a5e540 with template „ ﬁœ„
+INFO 2025-12-24 14:15:14,940 cv_views 16560 15204 Project created: b1a0e6de-5c61-46fb-993f-e1cf8fe6e146
+INFO 2025-12-24 14:15:15,061 cv_views 16560 15204 CompileJob created: 2eb0b11a-e88d-4a72-ae37-f552a99843b4
+INFO 2025-12-24 14:15:15,319 compile_tasks 16560 15204 Starting compilation for job 2eb0b11a-e88d-4a72-ae37-f552a99843b4
+INFO 2025-12-24 14:15:15,536 compile_tasks 16560 15204 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpc_13om3j
+INFO 2025-12-24 14:15:15,540 compile_tasks 16560 15204 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpc_13om3j\cv.tex
+INFO 2025-12-24 14:15:15,546 compile_tasks 16560 15204 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-24 14:15:15,548 compile_tasks 16560 15204 Running Tectonic for job 2eb0b11a-e88d-4a72-ae37-f552a99843b4
+INFO 2025-12-24 14:15:27,682 compile_tasks 16560 15204 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpc_13om3j\cv.pdf` (11.60 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-24 14:15:27,685 compile_tasks 16560 15204 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-24 14:15:27,688 compile_tasks 16560 15204 PDF generated: 11879 bytes
+INFO 2025-12-24 14:15:27,710 compile_tasks 16560 15204 PDF saved: /media/cvs/2eb0b11a-e88d-4a72-ae37-f552a99843b4/cv.pdf
+INFO 2025-12-24 14:15:27,817 compile_tasks 16560 15204 Job 2eb0b11a-e88d-4a72-ae37-f552a99843b4 completed successfully
+INFO 2025-12-24 14:15:28,189 cv_views 16560 15204 Celery task queued: e866ef27-a6b1-4d9a-8c35-9f82687b976a for job 2eb0b11a-e88d-4a72-ae37-f552a99843b4
+INFO 2025-12-24 14:16:20,547 compile_tasks 16560 4180 Starting compilation for job 041c2ed0-dd54-4c9f-8828-72714af19b0e
+INFO 2025-12-24 14:16:20,739 compile_tasks 16560 4180 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp4ar47wk6
+INFO 2025-12-24 14:16:20,741 compile_tasks 16560 4180 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp4ar47wk6\cv.tex
+INFO 2025-12-24 14:16:20,745 compile_tasks 16560 4180 Copied font: Tajawal-Medium 500.ttf
+INFO 2025-12-24 14:16:20,746 compile_tasks 16560 4180 Running Tectonic for job 041c2ed0-dd54-4c9f-8828-72714af19b0e
+INFO 2025-12-24 14:16:24,398 compile_tasks 16560 4180 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp4ar47wk6\cv.pdf` (12.23 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2025-12-24 14:16:24,400 compile_tasks 16560 4180 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2025-12-24 14:16:24,402 compile_tasks 16560 4180 PDF generated: 12525 bytes
+INFO 2025-12-24 14:16:24,408 compile_tasks 16560 4180 PDF saved: /media/cvs/041c2ed0-dd54-4c9f-8828-72714af19b0e/cv.pdf
+INFO 2025-12-24 14:16:25,247 compile_tasks 16560 4180 Job 041c2ed0-dd54-4c9f-8828-72714af19b0e completed successfully
+INFO 2025-12-24 14:16:25,419 cv_views 16560 4180 CV updated: new job 041c2ed0-dd54-4c9f-8828-72714af19b0e created from old job 2eb0b11a-e88d-4a72-ae37-f552a99843b4
+INFO 2026-01-02 01:19:04,360 compile_tasks 3492 15080 Starting compilation for job dd03284a-80dd-4ec8-98b8-a16fb8c28c72
+INFO 2026-01-02 01:19:04,555 compile_tasks 3492 15080 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp4puok8bf
+INFO 2026-01-02 01:19:04,557 compile_tasks 3492 15080 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp4puok8bf\cv.tex
+INFO 2026-01-02 01:19:04,578 compile_tasks 3492 15080 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 01:19:04,579 compile_tasks 3492 15080 Running Tectonic for job dd03284a-80dd-4ec8-98b8-a16fb8c28c72
+INFO 2026-01-02 01:19:10,602 compile_tasks 3492 15080 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp4puok8bf\cv.pdf` (11.99 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 01:19:10,645 compile_tasks 3492 15080 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 01:19:10,656 compile_tasks 3492 15080 PDF generated: 12282 bytes
+INFO 2026-01-02 01:19:10,694 compile_tasks 3492 15080 PDF saved: /media/cvs/dd03284a-80dd-4ec8-98b8-a16fb8c28c72/cv.pdf
+INFO 2026-01-02 01:19:10,790 compile_tasks 3492 15080 Job dd03284a-80dd-4ec8-98b8-a16fb8c28c72 completed successfully
+INFO 2026-01-02 01:28:26,342 compile_tasks 3492 20588 Starting compilation for job ed44445f-0b27-49d7-bad2-907d1841ab43
+INFO 2026-01-02 01:28:26,533 compile_tasks 3492 20588 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp856giusd
+INFO 2026-01-02 01:28:26,535 compile_tasks 3492 20588 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp856giusd\cv.tex
+INFO 2026-01-02 01:28:26,539 compile_tasks 3492 20588 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 01:28:26,540 compile_tasks 3492 20588 Running Tectonic for job ed44445f-0b27-49d7-bad2-907d1841ab43
+INFO 2026-01-02 01:28:31,310 compile_tasks 3492 20588 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp856giusd\cv.pdf` (11.57 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 01:28:31,311 compile_tasks 3492 20588 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 01:28:31,314 compile_tasks 3492 20588 PDF generated: 11851 bytes
+INFO 2026-01-02 01:28:31,320 compile_tasks 3492 20588 PDF saved: /media/cvs/ed44445f-0b27-49d7-bad2-907d1841ab43/cv.pdf
+INFO 2026-01-02 01:28:31,420 compile_tasks 3492 20588 Job ed44445f-0b27-49d7-bad2-907d1841ab43 completed successfully
+INFO 2026-01-02 02:06:20,090 compile_tasks 936 21388 Starting compilation for job 7e196267-2620-4cd2-a5c3-1d8b140876f2
+INFO 2026-01-02 02:06:20,425 compile_tasks 936 21388 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp_ptm474j
+INFO 2026-01-02 02:06:20,431 compile_tasks 936 21388 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp_ptm474j\cv.tex
+INFO 2026-01-02 02:06:20,435 compile_tasks 936 21388 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 02:06:20,435 compile_tasks 936 21388 Running Tectonic for job 7e196267-2620-4cd2-a5c3-1d8b140876f2
+INFO 2026-01-02 02:06:23,983 compile_tasks 936 21388 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp_ptm474j\cv.pdf` (11.51 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 02:06:23,986 compile_tasks 936 21388 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 02:06:23,990 compile_tasks 936 21388 PDF generated: 11786 bytes
+INFO 2026-01-02 02:06:23,994 compile_tasks 936 21388 PDF saved: /media/cvs/7e196267-2620-4cd2-a5c3-1d8b140876f2/cv.pdf
+INFO 2026-01-02 02:06:24,091 compile_tasks 936 21388 Job 7e196267-2620-4cd2-a5c3-1d8b140876f2 completed successfully
+INFO 2026-01-02 02:06:41,989 compile_tasks 936 10388 Starting compilation for job 0e9655fd-19e6-4836-8e29-bd849f411725
+INFO 2026-01-02 02:06:42,181 compile_tasks 936 10388 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp2plqc6e2
+INFO 2026-01-02 02:06:42,183 compile_tasks 936 10388 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp2plqc6e2\cv.tex
+INFO 2026-01-02 02:06:42,186 compile_tasks 936 10388 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 02:06:42,186 compile_tasks 936 10388 Running Tectonic for job 0e9655fd-19e6-4836-8e29-bd849f411725
+INFO 2026-01-02 02:06:46,245 compile_tasks 936 10388 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp2plqc6e2\cv.pdf` (11.92 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 02:06:46,246 compile_tasks 936 10388 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 02:06:46,248 compile_tasks 936 10388 PDF generated: 12211 bytes
+INFO 2026-01-02 02:06:46,251 compile_tasks 936 10388 PDF saved: /media/cvs/0e9655fd-19e6-4836-8e29-bd849f411725/cv.pdf
+INFO 2026-01-02 02:06:46,361 compile_tasks 936 10388 Job 0e9655fd-19e6-4836-8e29-bd849f411725 completed successfully
+INFO 2026-01-02 13:03:54,367 compile_tasks 2776 2440 Starting compilation for job e8efa04d-f14e-45fe-8795-82553d9e809d
+INFO 2026-01-02 13:03:54,576 compile_tasks 2776 2440 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp6fw0i39l
+INFO 2026-01-02 13:03:54,578 compile_tasks 2776 2440 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp6fw0i39l\cv.tex
+INFO 2026-01-02 13:03:54,598 compile_tasks 2776 2440 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 13:03:54,598 compile_tasks 2776 2440 Running Tectonic for job e8efa04d-f14e-45fe-8795-82553d9e809d
+INFO 2026-01-02 13:04:00,370 compile_tasks 2776 2440 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp6fw0i39l\cv.pdf` (11.61 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 13:04:00,375 compile_tasks 2776 2440 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 13:04:00,380 compile_tasks 2776 2440 PDF generated: 11886 bytes
+INFO 2026-01-02 13:04:00,387 compile_tasks 2776 2440 PDF saved: /media/cvs/e8efa04d-f14e-45fe-8795-82553d9e809d/cv.pdf
+INFO 2026-01-02 13:04:00,500 compile_tasks 2776 2440 Job e8efa04d-f14e-45fe-8795-82553d9e809d completed successfully
+INFO 2026-01-02 13:05:34,667 compile_tasks 2776 18704 Starting compilation for job 0068f2a2-c888-42d3-ba85-d23bf0f1c00f
+INFO 2026-01-02 13:05:34,867 compile_tasks 2776 18704 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpucvs7b_k
+INFO 2026-01-02 13:05:34,869 compile_tasks 2776 18704 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpucvs7b_k\cv.tex
+INFO 2026-01-02 13:05:34,873 compile_tasks 2776 18704 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 13:05:34,874 compile_tasks 2776 18704 Running Tectonic for job 0068f2a2-c888-42d3-ba85-d23bf0f1c00f
+INFO 2026-01-02 13:05:38,209 compile_tasks 2776 18704 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpucvs7b_k\cv.pdf` (11.90 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 13:05:38,210 compile_tasks 2776 18704 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 13:05:38,212 compile_tasks 2776 18704 PDF generated: 12186 bytes
+INFO 2026-01-02 13:05:38,215 compile_tasks 2776 18704 PDF saved: /media/cvs/0068f2a2-c888-42d3-ba85-d23bf0f1c00f/cv.pdf
+INFO 2026-01-02 13:05:38,348 compile_tasks 2776 18704 Job 0068f2a2-c888-42d3-ba85-d23bf0f1c00f completed successfully
+INFO 2026-01-02 14:33:05,020 compile_tasks 8620 15488 Starting compilation for job 8caf4ef5-149c-4b88-a7ad-57776de0d153
+INFO 2026-01-02 14:33:05,234 compile_tasks 8620 15488 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpjqra9u1q
+INFO 2026-01-02 14:33:05,236 compile_tasks 8620 15488 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpjqra9u1q\cv.tex
+INFO 2026-01-02 14:33:05,239 compile_tasks 8620 15488 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 14:33:05,240 compile_tasks 8620 15488 Running Tectonic for job 8caf4ef5-149c-4b88-a7ad-57776de0d153
+INFO 2026-01-02 14:33:10,050 compile_tasks 8620 15488 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpjqra9u1q\cv.pdf` (12.05 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 14:33:10,053 compile_tasks 8620 15488 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 14:33:10,062 compile_tasks 8620 15488 PDF generated: 12343 bytes
+INFO 2026-01-02 14:33:10,067 compile_tasks 8620 15488 PDF saved: /media/cvs/8caf4ef5-149c-4b88-a7ad-57776de0d153/cv.pdf
+INFO 2026-01-02 14:33:10,173 compile_tasks 8620 15488 Job 8caf4ef5-149c-4b88-a7ad-57776de0d153 completed successfully
+INFO 2026-01-02 17:05:50,956 compile_tasks 15288 21276 Starting compilation for job 8b8e405b-29eb-4035-94be-875000a17cc1
+INFO 2026-01-02 17:05:51,167 compile_tasks 15288 21276 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp9v0fp8tc
+INFO 2026-01-02 17:05:51,171 compile_tasks 15288 21276 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp9v0fp8tc\cv.tex
+INFO 2026-01-02 17:05:51,202 compile_tasks 15288 21276 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 17:05:51,205 compile_tasks 15288 21276 Running Tectonic for job 8b8e405b-29eb-4035-94be-875000a17cc1
+INFO 2026-01-02 17:05:58,870 compile_tasks 15288 21276 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp9v0fp8tc\cv.pdf` (11.71 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 17:05:58,871 compile_tasks 15288 21276 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 17:05:58,877 compile_tasks 15288 21276 PDF generated: 11996 bytes
+INFO 2026-01-02 17:05:58,901 compile_tasks 15288 21276 PDF saved: /media/cvs/8b8e405b-29eb-4035-94be-875000a17cc1/cv.pdf
+INFO 2026-01-02 17:05:59,011 compile_tasks 15288 21276 Job 8b8e405b-29eb-4035-94be-875000a17cc1 completed successfully
+INFO 2026-01-02 17:18:03,893 compile_tasks 14020 16908 Starting compilation for job e720d3a5-b663-4bed-9479-49aae1b8c40d
+INFO 2026-01-02 17:18:04,102 compile_tasks 14020 16908 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmptaj_upbv
+INFO 2026-01-02 17:18:04,104 compile_tasks 14020 16908 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmptaj_upbv\cv.tex
+INFO 2026-01-02 17:18:04,109 compile_tasks 14020 16908 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 17:18:04,110 compile_tasks 14020 16908 Running Tectonic for job e720d3a5-b663-4bed-9479-49aae1b8c40d
+INFO 2026-01-02 17:18:08,880 compile_tasks 14020 16908 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmptaj_upbv\cv.pdf` (11.67 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 17:18:08,882 compile_tasks 14020 16908 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 17:18:08,888 compile_tasks 14020 16908 PDF generated: 11948 bytes
+INFO 2026-01-02 17:18:08,895 compile_tasks 14020 16908 PDF saved: /media/cvs/e720d3a5-b663-4bed-9479-49aae1b8c40d/cv.pdf
+INFO 2026-01-02 17:18:09,012 compile_tasks 14020 16908 Job e720d3a5-b663-4bed-9479-49aae1b8c40d completed successfully
+INFO 2026-01-02 18:01:43,243 compile_tasks 15672 21944 Starting compilation for job 4a60dd92-70f6-4d12-96aa-8fbe0baec5cc
+INFO 2026-01-02 18:01:43,436 compile_tasks 15672 21944 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpd_111ukh
+INFO 2026-01-02 18:01:43,438 compile_tasks 15672 21944 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpd_111ukh\cv.tex
+INFO 2026-01-02 18:01:43,444 compile_tasks 15672 21944 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 18:01:43,445 compile_tasks 15672 21944 Running Tectonic for job 4a60dd92-70f6-4d12-96aa-8fbe0baec5cc
+INFO 2026-01-02 18:01:48,189 compile_tasks 15672 21944 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpd_111ukh\cv.pdf` (11.75 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 18:01:48,193 compile_tasks 15672 21944 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 18:01:48,208 compile_tasks 15672 21944 PDF generated: 12034 bytes
+INFO 2026-01-02 18:01:48,216 compile_tasks 15672 21944 PDF saved: /media/cvs/4a60dd92-70f6-4d12-96aa-8fbe0baec5cc/cv.pdf
+INFO 2026-01-02 18:01:48,315 compile_tasks 15672 21944 Job 4a60dd92-70f6-4d12-96aa-8fbe0baec5cc completed successfully
+INFO 2026-01-02 18:32:49,059 compile_tasks 15672 17872 Starting compilation for job d11e8a7e-6bdc-4c29-8781-b9f407399c0c
+INFO 2026-01-02 18:32:49,257 compile_tasks 15672 17872 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp7zqv7fc9
+INFO 2026-01-02 18:32:49,259 compile_tasks 15672 17872 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp7zqv7fc9\cv.tex
+INFO 2026-01-02 18:32:49,263 compile_tasks 15672 17872 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-02 18:32:49,263 compile_tasks 15672 17872 Running Tectonic for job d11e8a7e-6bdc-4c29-8781-b9f407399c0c
+INFO 2026-01-02 18:32:52,778 compile_tasks 15672 17872 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp7zqv7fc9\cv.pdf` (11.71 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-02 18:32:52,780 compile_tasks 15672 17872 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-02 18:32:52,783 compile_tasks 15672 17872 PDF generated: 11994 bytes
+INFO 2026-01-02 18:32:52,787 compile_tasks 15672 17872 PDF saved: /media/cvs/d11e8a7e-6bdc-4c29-8781-b9f407399c0c/cv.pdf
+INFO 2026-01-02 18:32:52,889 compile_tasks 15672 17872 Job d11e8a7e-6bdc-4c29-8781-b9f407399c0c completed successfully
+INFO 2026-01-07 01:28:39,726 compile_tasks 2056 14576 Starting compilation for job 8147cee8-a754-4b35-bd90-2b0f9bb8e365
+INFO 2026-01-07 01:28:39,944 compile_tasks 2056 14576 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp39rnmo19
+INFO 2026-01-07 01:28:39,947 compile_tasks 2056 14576 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp39rnmo19\cv.tex
+INFO 2026-01-07 01:28:39,972 compile_tasks 2056 14576 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-07 01:28:39,973 compile_tasks 2056 14576 Running Tectonic for job 8147cee8-a754-4b35-bd90-2b0f9bb8e365
+INFO 2026-01-07 01:28:46,243 compile_tasks 2056 14576 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp39rnmo19\cv.pdf` (11.92 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-07 01:28:46,245 compile_tasks 2056 14576 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-07 01:28:46,247 compile_tasks 2056 14576 PDF generated: 12202 bytes
+INFO 2026-01-07 01:28:46,253 compile_tasks 2056 14576 PDF saved: /media/cvs/8147cee8-a754-4b35-bd90-2b0f9bb8e365/cv.pdf
+INFO 2026-01-07 01:28:46,373 compile_tasks 2056 14576 Job 8147cee8-a754-4b35-bd90-2b0f9bb8e365 completed successfully
+INFO 2026-01-07 02:19:52,205 compile_tasks 3912 4268 Starting compilation for job 20c7b410-2aa4-45b4-89d8-a4c125d3a5da
+INFO 2026-01-07 02:19:52,440 compile_tasks 3912 4268 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp_ji16l7f
+INFO 2026-01-07 02:19:52,444 compile_tasks 3912 4268 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp_ji16l7f\cv.tex
+INFO 2026-01-07 02:19:52,451 compile_tasks 3912 4268 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-07 02:19:52,457 compile_tasks 3912 4268 Running Tectonic for job 20c7b410-2aa4-45b4-89d8-a4c125d3a5da
+INFO 2026-01-07 02:19:58,173 compile_tasks 3912 4268 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp_ji16l7f\cv.pdf` (11.38 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-07 02:19:58,176 compile_tasks 3912 4268 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-07 02:19:58,178 compile_tasks 3912 4268 PDF generated: 11658 bytes
+INFO 2026-01-07 02:19:58,182 compile_tasks 3912 4268 PDF saved: /media/cvs/20c7b410-2aa4-45b4-89d8-a4c125d3a5da/cv.pdf
+INFO 2026-01-07 02:19:58,350 compile_tasks 3912 4268 Job 20c7b410-2aa4-45b4-89d8-a4c125d3a5da completed successfully
+INFO 2026-01-09 21:35:15,929 compile_tasks 24560 22808 Starting compilation for job 18fc5903-a6f9-431d-a235-3e64ee5d5629
+INFO 2026-01-09 21:35:16,148 compile_tasks 24560 22808 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmp74rkbjhc
+INFO 2026-01-09 21:35:16,150 compile_tasks 24560 22808 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmp74rkbjhc\cv.tex
+INFO 2026-01-09 21:35:16,176 compile_tasks 24560 22808 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-09 21:35:16,182 compile_tasks 24560 22808 Running Tectonic for job 18fc5903-a6f9-431d-a235-3e64ee5d5629
+INFO 2026-01-09 21:35:22,220 compile_tasks 24560 22808 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmp74rkbjhc\cv.pdf` (11.61 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-09 21:35:22,221 compile_tasks 24560 22808 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-09 21:35:22,224 compile_tasks 24560 22808 PDF generated: 11890 bytes
+INFO 2026-01-09 21:35:22,227 compile_tasks 24560 22808 PDF saved: /media/cvs/18fc5903-a6f9-431d-a235-3e64ee5d5629/cv.pdf
+INFO 2026-01-09 21:35:22,378 compile_tasks 24560 22808 Job 18fc5903-a6f9-431d-a235-3e64ee5d5629 completed successfully
+INFO 2026-01-09 22:08:48,086 compile_tasks 5948 22316 Starting compilation for job a82a43d6-9ab0-4edb-8cff-07043553aa29
+INFO 2026-01-09 22:08:48,407 compile_tasks 5948 22316 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpzhczi99z
+INFO 2026-01-09 22:08:48,410 compile_tasks 5948 22316 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpzhczi99z\cv.tex
+INFO 2026-01-09 22:08:48,413 compile_tasks 5948 22316 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-09 22:08:48,414 compile_tasks 5948 22316 Running Tectonic for job a82a43d6-9ab0-4edb-8cff-07043553aa29
+INFO 2026-01-09 22:08:52,086 compile_tasks 5948 22316 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpzhczi99z\cv.pdf` (11.86 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-09 22:08:52,090 compile_tasks 5948 22316 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-09 22:08:52,093 compile_tasks 5948 22316 PDF generated: 12148 bytes
+INFO 2026-01-09 22:08:52,097 compile_tasks 5948 22316 PDF saved: /media/cvs/a82a43d6-9ab0-4edb-8cff-07043553aa29/cv.pdf
+INFO 2026-01-09 22:08:52,250 compile_tasks 5948 22316 Job a82a43d6-9ab0-4edb-8cff-07043553aa29 completed successfully
+INFO 2026-01-14 22:16:49,253 compile_tasks 23740 23484 Starting compilation for job 8c112462-26c5-4d0a-a07b-73595d115b99
+INFO 2026-01-14 22:16:49,473 compile_tasks 23740 23484 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpfjgmj2lg
+INFO 2026-01-14 22:16:49,475 compile_tasks 23740 23484 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpfjgmj2lg\cv.tex
+INFO 2026-01-14 22:16:49,481 compile_tasks 23740 23484 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-14 22:16:49,485 compile_tasks 23740 23484 Running Tectonic for job 8c112462-26c5-4d0a-a07b-73595d115b99
+INFO 2026-01-14 22:16:56,248 compile_tasks 23740 23484 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpfjgmj2lg\cv.pdf` (11.92 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-14 22:16:56,256 compile_tasks 23740 23484 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-14 22:16:56,264 compile_tasks 23740 23484 PDF generated: 12204 bytes
+INFO 2026-01-14 22:16:56,280 compile_tasks 23740 23484 PDF saved: /media/cvs/8c112462-26c5-4d0a-a07b-73595d115b99/cv.pdf
+INFO 2026-01-14 22:16:56,384 compile_tasks 23740 23484 Job 8c112462-26c5-4d0a-a07b-73595d115b99 completed successfully
+ERROR 2026-01-23 04:08:07,109 cv_views 11060 2624 PDF Parsing Failed: Resume Parsing Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2026-01-23 04:09:17,720 cv_views 11060 14596 PDF Parsing Failed: Resume Parsing Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2026-01-23 04:14:14,148 cv_views 17224 18204 PDF Parsing Failed: Resume Parsing Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2026-01-23 04:15:50,011 cv_views 18320 18212 PDF Parsing Failed: Resume Parsing Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}

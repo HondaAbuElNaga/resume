@@ -1,0 +1,193 @@
+\documentclass[10pt, a4paper]{article}
+
+% =========================================================
+% 1. تحميل المكتبات الأساسية
+% =========================================================
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
+\usepackage{calc}
+\usepackage{xcolor} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% =========================================================
+% 2. إعدادات اللغة والخطوط
+% =========================================================
+\usepackage{polyglossia}
+\setmainlanguage[numerals=maghrib]{arabic}
+\setotherlanguage{english}
+\usepackage{fontspec}
+
+% استخدام خط Tajawal
+\newfontfamily\arabicfont[Script=Arabic, Scale=1.0, Path=./]{Tajawal-Medium 500.ttf}
+\newfontfamily\englishfont[Scale=1.0, Path=./]{Tajawal-Medium 500.ttf}
+
+% =========================================================
+% 3. ضبط التنسيقات
+% =========================================================
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\arabicfont} 
+  {}{0em}{}
+  [\vspace{2pt}\hrule height 0.5pt \vspace{4pt}]
+
+\titlespacing*{\section}{0pt}{5pt}{5pt}
+
+% =========================================================
+% 4. القوالب (Macros)
+% =========================================================
+
+\newcommand{\AdaptiveHeader}[5]{
+    \begin{center}
+        {\Huge \bfseries #1} \\ \vspace{4pt}
+        {\large #2} \\ \vspace{4pt}
+        \small
+        \textenglish{#3} $\bullet$ \href{mailto:#4}{\textenglish{#4}} \\
+        \ifx&#5& \else \href{#5}{\textenglish{#5}} \fi
+    \end{center}
+    \vspace{-2pt}
+}
+
+\newcommand{\AdaptiveEntry}[5]{
+    \vspace{4pt}
+    \noindent
+    \begin{minipage}[t]{0.58\linewidth}
+        \textbf{#1}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.41\linewidth}
+        \raggedleft \small \textbf{\textenglish{#2}}
+    \end{minipage}
+    
+    \vspace{1pt}
+    \noindent
+    \begin{minipage}[t]{0.58\linewidth}
+        \textit{#3}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.41\linewidth}
+        \raggedleft \footnotesize \textenglish{#4}
+    \end{minipage}
+    
+    \ifx&#5& \else
+        \vspace{-2pt}
+        \begin{itemize}[rightmargin=0.2cm, leftmargin=*, nosep, itemsep=1pt]
+            #5
+        \end{itemize}
+    \fi
+}
+
+\newcommand{\SkillRow}[2]{
+    \noindent
+    \begin{minipage}[t]{0.20\linewidth}
+        \textbf{#1}
+    \end{minipage}%
+    \begin{minipage}[t]{0.79\linewidth}
+        \textenglish{#2}
+    \end{minipage}
+    \vspace{2pt}
+}
+% \newcommand{\SkillRow}[2]{
+%     \noindent
+%     \begin{minipage}[t]{0.20\linewidth}
+%         \raggedleft \textbf{#1}
+%     \end{minipage}
+%     \begin{minipage}[t]{0.79\linewidth}
+%         \raggedleft 
+%     \end{minipage}
+%     \vspace{2pt}
+% }
+
+% =========================================================
+% 5. المحتوى (مع تعديلات Jinja2 لمنع القوائم الفارغة)
+% =========================================================
+\begin{document}
+
+% --- Header ---
+\AdaptiveHeader
+{ {{- full_name|escape_latex -}} }
+{ {{- professional_summary|escape_latex -}} }
+{ {{- contact.phone|default('')|escape_latex -}} }
+{ {{- contact.email|default('')|escape_latex -}} }
+{ {{- contact.linkedin|default('')|escape_latex -}} }
+
+% --- Education ---
+{% if education %}
+\section*{التعليم}
+{% for edu in education %}
+\AdaptiveEntry
+{ {{- edu.degree|escape_latex -}} }
+{ {{- edu.date_range|default('')|escape_latex -}}{% if edu.location %} \textenglish{| {{ edu.location|escape_latex }}}{% endif %}{% if edu.gpa %} \textenglish{| GPA: {{ edu.gpa|escape_latex }}}{% endif %} }
+{ {{- edu.institution|escape_latex -}} }
+{}
+{
+{%- for detail in edu.details -%}
+    \item {{ detail|escape_latex }}
+{%- endfor -%}
+}
+{% endfor %}
+{% endif %}
+
+% --- Experience ---
+{% if experience %}
+\section*{الخبرة العملية}
+{% for exp in experience %}
+\AdaptiveEntry
+{ {{- exp.role|escape_latex -}} }
+{ {{- exp.date_range|default('')|escape_latex -}}{% if exp.location %} \textenglish{| {{ exp.location|escape_latex }}}{% endif %} }
+{ {{- exp.company|escape_latex -}} }
+{}
+{
+{%- for resp in exp.responsibilities -%}
+    \item {{ resp|escape_latex }}
+{%- endfor -%}
+}
+{% endfor %}
+{% endif %}
+
+% --- Projects ---
+{% if projects %}
+\section*{المشاريع التقنية}
+{% for proj in projects %}
+\AdaptiveEntry
+{ {{- proj.name|escape_latex -}} }
+{ {{- proj.technologies|join(', ')|escape_latex -}} }
+{ {{- proj.description|default('')|escape_latex -}} }
+{}
+{
+{%- for detail in proj.details -%}
+    \item {{ detail|escape_latex }}
+{%- endfor -%}
+}
+{% endfor %}
+{% endif %}
+
+% --- Skills ---
+{% if skills %}
+\section*{المهارات التقنية}
+{% for skill_cat in skills %}
+\SkillRow{ \RL{ {{- skill_cat.category_name|escape_latex -}} } }{ \RL{ {{- skill_cat.skills|join('، ') -}} } }
+{% endfor %}
+{% endif %}
+
+% --- Volunteering/Responsibilities ---
+{% if responsibilities %}
+\section*{العمل التطوعي}
+{% for resp in responsibilities %}
+\AdaptiveEntry
+{ {{- resp.title|escape_latex -}} }
+{ {{- resp.date_range|default('')|escape_latex -}}{% if resp.location %} \textenglish{| {{ resp.location|escape_latex }}}{% endif %} }
+{ {{- resp.organization|escape_latex -}} }
+{}
+{
+{%- for detail in resp.details -%}
+    \item {{ detail|escape_latex }}
+{%- endfor -%}
+}
+{% endfor %}
+{% endif %}
+
+\end{document}
