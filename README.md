@@ -1,6 +1,18 @@
 [README.md](https://github.com/user-attachments/files/24822738/README.md)
 # Backend Project Documentation
 
+`
+python manage.py runserver == uv run manage.py runserver
+`
+`
+celery -A main worker -l info -P eventlet
+`
+`
+npm run dev
+`
+
+
+
 ## Overview
 This backend project is built using Django and provides the necessary APIs and services for the application. It is structured to support various functionalities related to CV generation and management.
 
@@ -258,7 +270,7 @@ To run tests, use:
 ```bash
 python manage.py test
 ```
-# to activate celey 
+# to activate celery 
 ```
 celery -A main worker -l info -P eventlet
 ```
