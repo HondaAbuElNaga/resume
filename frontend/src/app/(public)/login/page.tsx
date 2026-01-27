@@ -344,7 +344,7 @@ const handleGoogleLogin = () => {
               >
                 ليس لديك حساب؟{" "}
                 <Link 
-                  href="/signup" 
+                  href="/register" 
                   className="text-black font-medium hover:underline"
                 >
                   إنشاء حساب جديد

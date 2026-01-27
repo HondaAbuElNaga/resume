@@ -770,3 +770,64 @@ warning: warnings were issued by the TeX engine; use --print and/or --keep-logs 
 INFO 2026-01-23 23:22:25,951 compile_tasks 8456 952 PDF generated: 11788 bytes
 INFO 2026-01-23 23:22:25,963 compile_tasks 8456 952 PDF saved: /media/cvs/5d3cbd52-0fa6-461d-b9f4-f82da2927dcb/cv.pdf
 INFO 2026-01-23 23:22:26,056 compile_tasks 8456 952 Job 5d3cbd52-0fa6-461d-b9f4-f82da2927dcb completed successfully
+INFO 2026-01-24 02:35:11,666 compile_tasks 6860 2217758898816 Starting compilation for job 8bdaa45c-0405-46c4-afb6-82c9c1939854
+INFO 2026-01-24 02:35:11,885 compile_tasks 6860 2217758898816 Created temp dir: C:\Users\mohan\AppData\Local\Temp\tmpxrrdkdwv
+INFO 2026-01-24 02:35:11,891 compile_tasks 6860 2217758898816 Written LaTeX file: C:\Users\mohan\AppData\Local\Temp\tmpxrrdkdwv\cv.tex
+INFO 2026-01-24 02:35:11,919 compile_tasks 6860 2217758898816 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-24 02:35:11,919 compile_tasks 6860 2217758898816 Running Tectonic for job 8bdaa45c-0405-46c4-afb6-82c9c1939854
+INFO 2026-01-24 02:35:20,595 compile_tasks 6860 2217758898816 Tectonic stdout: note: Running TeX ...
+note: Rerunning TeX because "cv.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\mohan\AppData\Local\Temp\tmpxrrdkdwv\cv.pdf` (11.51 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+WARNING 2026-01-24 02:35:20,597 compile_tasks 6860 2217758898816 Tectonic stderr: Fontconfig error: Cannot load default config file: No such file: (null)
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: cv.tex:160: Overfull \hbox (531.3331pt too wide) in paragraph at lines 158--160
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+INFO 2026-01-24 02:35:20,599 compile_tasks 6860 2217758898816 PDF generated: 11786 bytes
+ERROR 2026-01-24 02:35:20,633 compile_tasks 6860 2217758898816 Job 8bdaa45c-0405-46c4-afb6-82c9c1939854 failed: set_nonblocking() on a file object with no setblocking() method (Windows pipes don't support non-blocking I/O)
+Traceback (most recent call last):
+  File "E:\esay_cv\honda\Lib\site-packages\eventlet\greenio\base.py", line 85, in set_nonblocking
+    setblocking = fd.setblocking
+                  ^^^^^^^^^^^^^^
+AttributeError: 'GreenFileIO' object has no attribute 'setblocking'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\esay_cv\honda\Lib\site-packages\eventlet\greenio\base.py", line 92, in set_nonblocking
+    import fcntl
+ModuleNotFoundError: No module named 'fcntl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\esay_cv\backend\core\tasks\compile_tasks.py", line 138, in compile_latex_to_pdf
+    saved_path = default_storage.save(pdf_filename, ContentFile(pdf_content))
+  File "E:\esay_cv\honda\Lib\site-packages\django\core\files\storage\base.py", line 49, in save
+    name = self._save(name, content)
+  File "E:\esay_cv\honda\Lib\site-packages\django\core\files\storage\filesystem.py", line 125, in _save
+    _file = os.fdopen(fd, mode)
+  File "E:\esay_cv\honda\Lib\site-packages\eventlet\green\os.py", line 29, in fdopen
+    return greenio.GreenPipe(fd, *args, **kw)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\esay_cv\honda\Lib\site-packages\eventlet\greenio\py3.py", line 224, in GreenPipe
+    return _open(name, mode, buffering, encoding, errors, newline, closefd, opener)
+  File "C:\Users\mohan\miniconda3\Lib\_pyio.py", line 231, in open
+    raw = FileIO(file,
+                 (creating and "x" or "") +
+    ...<3 lines>...
+                 (updating and "+" or ""),
+                 closefd, opener=opener)
+  File "E:\esay_cv\honda\Lib\site-packages\eventlet\greenio\py3.py", line 51, in __init__
+    set_nonblocking(self)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "E:\esay_cv\honda\Lib\site-packages\eventlet\greenio\base.py", line 99, in set_nonblocking
+    raise NotImplementedError("set_nonblocking() on a file object "
+                              "with no setblocking() method "
+                              "(Windows pipes don't support non-blocking I/O)")
+NotImplementedError: set_nonblocking() on a file object with no setblocking() method (Windows pipes don't support non-blocking I/O)
+ERROR 2026-01-24 02:35:21,105 compile_tasks 6860 2217758898816 Job 8bdaa45c-0405-46c4-afb6-82c9c1939854 failed: set_nonblocking() on a file object with no setblocking() method (Windows pipes don't support non-blocking I/O)
+ERROR 2026-01-24 02:35:21,298 compile_tasks 6860 2217758898816 Job 8bdaa45c-0405-46c4-afb6-82c9c1939854 failed: set_nonblocking() on a file object with no setblocking() method (Windows pipes don't support non-blocking I/O)
