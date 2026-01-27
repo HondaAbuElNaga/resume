@@ -28,7 +28,7 @@ export default function CreateResumePage() {
 
     try {
       // إرسال النص للباك إند
-      const { data } = await api.post("/generate/", { 
+      const { data } = await api.post("/generate", { 
         prompt: prompt.trim(),
         language: 'ar', 
       });
