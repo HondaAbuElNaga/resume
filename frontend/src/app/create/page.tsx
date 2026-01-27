@@ -19,7 +19,7 @@ export default function CreateResumePage() {
     if (!prompt.trim()) return;
 
     if (prompt.length < 50) {
-        setError("يرجى كتابة تفاصيل أكثر (50 حرف على الأقل) للحصول على نتيجة جيدة.");
+        setError("يرجى كتابة تفاصيل أكثر (100 حرف على الأقل) للحصول على نتيجة جيدة.");
         return;
     }
     

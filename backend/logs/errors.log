@@ -2216,3 +2216,78 @@ Traceback (most recent call last):
     raise TimeoutError("Timeout reading from socket")
 redis.exceptions.TimeoutError: Timeout reading from socket
 ERROR 2026-01-23 23:13:21,022 runserver 8456 5248 [35;1mHTTP POST /api/generate/ 500 [5.16, 127.0.0.1:57895][0m
+ERROR 2026-01-27 08:21:19,041 log 1296 140677801309888 Internal Server Error: /accounts/google/login/
+Traceback (most recent call last):
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 138, in has_key
+    return self.client.has_key(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 740, in has_key
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 327, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ebrahem/miniconda310/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django/contrib/sessions/middleware.py", line 59, in process_response
+    request.session.save()
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django/contrib/sessions/backends/cache.py", line 83, in save
+    return self.create()
+           ^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django/contrib/sessions/backends/cache.py", line 55, in create
+    self._session_key = self._get_new_session_key()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 198, in _get_new_session_key
+    if not self.exists(session_key):
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django/contrib/sessions/backends/cache.py", line 117, in exists
+    bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django/core/cache/backends/base.py", line 301, in __contains__
+    return self.has_key(key)
+           ^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__  # noqa: B904
+    ^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 738, in has_key
+    return client.exists(key) == 1
+           ^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1804, in exists
+    return self.execute_command("EXISTS", *names, keys=names)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/redis/connection.py", line 2603, in get_connection
+    connection.connect()
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/redis/connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+  File "/mnt/e/Machine Learning/CodE/2. Projects/resume/.venv/lib/python3.12/site-packages/redis/connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2026-01-27 08:21:19,167 runserver 1296 140677908264640 [35;1mHTTP GET /accounts/google/login/ 500 [1.67, 127.0.0.1:43584][0m

@@ -44,7 +44,7 @@ export default function Home() {
 
   /**
    * Handle form submission.
-   * Connects to Django Backend: POST /api/generate-cv-with-ai/
+   * Connects to Django Backend: POST /api/generate/
    */
   const handleGenerate = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -73,7 +73,7 @@ export default function Home() {
     try {
       // 4. API Call to Django
       // Endpoint mapped from cv_views.py
-      const { data } = await api.post<GenerateResponse>("/generate-cv-with-ai/", { 
+      const { data } = await api.post<GenerateResponse>("/generate/", { 
         prompt: prompt.trim(),
         language: 'ar', // Default to Arabic based on UI direction
         // template_id: can be passed if a specific template is selected

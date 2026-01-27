@@ -29,7 +29,7 @@ export default function AuthCallbackPage() {
         
         // 4. تنفيذ طلب الإنشاء فوراً
         api.post(
-            "/generate-cv-with-ai/", // تأكد أن هذا هو الرابط الصحيح في backend urls
+            "/generate/", // تأكد أن هذا هو الرابط الصحيح في backend urls
             { prompt: pendingPrompt },
             { headers: { Authorization: `Token ${token}` } } // نرسل التوكن يدوياً للتأكد
           )
