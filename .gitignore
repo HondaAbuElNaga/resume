@@ -22,7 +22,7 @@ $RECYCLE.BIN/
 /frontend/.env.test.local
 /frontend/.env.production.local
 
-
+errors.log
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
