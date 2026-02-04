@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  --font-zain: "Zain", var(--font-zain);
+  --font-space-grotesk: "Space Grotesk", var(--font-space-grotesk);
+  --font-plus-jakarta: "Plus Jakarta Sans", var(--font-plus-jakarta);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +20,18 @@ html {
 
 body {
   @apply bg-white text-gray-900;
-  font-family: 'Zain', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  font-family: var(--font-zain), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Modern Professional Typography */
+.font-display {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-plus-jakarta), sans-serif;
 }
 
 /* Hide scrollbars while keeping scroll functionality */

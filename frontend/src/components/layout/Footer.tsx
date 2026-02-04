@@ -35,8 +35,8 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link 
-                  href="/" 
+                <Link
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                   style={{ fontFamily: "'Zain', sans-serif" }}
                 >
@@ -44,8 +44,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/templates" 
+                <Link
+                  href="/templates"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                   style={{ fontFamily: "'Zain', sans-serif" }}
                 >
@@ -53,8 +53,17 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/#features" 
+                <Link
+                  href="/pricing"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  style={{ fontFamily: "'Zain', sans-serif" }}
+                >
+                  الأسعار
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#features"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                   style={{ fontFamily: "'Zain', sans-serif" }}
                 >
@@ -62,8 +71,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/#faq" 
+                <Link
+                  href="/#faq"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                   style={{ fontFamily: "'Zain', sans-serif" }}
                 >

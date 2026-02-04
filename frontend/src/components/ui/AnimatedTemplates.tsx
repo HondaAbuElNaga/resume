@@ -156,10 +156,10 @@ export default function AnimatedTemplates() {
       </div>
 
       {/* Blur overlays for smooth edges */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-blue-20 via-blue-50/90 to-transparent pointer-events-none z-10" />
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-blue-20 via-blue-50/90 to-transparent pointer-events-none z-10" />
-      <div className="absolute top-0 bottom-0 left-0 w-24 bg-gradient-to-r from-blue-20 via-blue-50/90 to-transparent pointer-events-none z-10" />
-      <div className="absolute top-0 bottom-0 right-0 w-16 bg-gradient-to-l from-blue-20 via-blue-50/70 to-transparent pointer-events-none z-10" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white via-blue-50/80 to-transparent pointer-events-none z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-blue-50/80 to-transparent pointer-events-none z-10" />
+      <div className="absolute top-0 bottom-0 left-0 w-24 bg-gradient-to-r from-white via-blue-50/80 to-transparent pointer-events-none z-10" />
+      <div className="absolute top-0 bottom-0 right-0 w-16 bg-gradient-to-l from-white via-blue-50/60 to-transparent pointer-events-none z-10" />
     </div>
   );
 }

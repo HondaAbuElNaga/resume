@@ -831,3 +831,108 @@ Traceback (most recent call last):
 NotImplementedError: set_nonblocking() on a file object with no setblocking() method (Windows pipes don't support non-blocking I/O)
 ERROR 2026-01-24 02:35:21,105 compile_tasks 6860 2217758898816 Job 8bdaa45c-0405-46c4-afb6-82c9c1939854 failed: set_nonblocking() on a file object with no setblocking() method (Windows pipes don't support non-blocking I/O)
 ERROR 2026-01-24 02:35:21,298 compile_tasks 6860 2217758898816 Job 8bdaa45c-0405-46c4-afb6-82c9c1939854 failed: set_nonblocking() on a file object with no setblocking() method (Windows pipes don't support non-blocking I/O)
+INFO 2026-01-27 12:00:28,654 compile_tasks 36748 1543353639488 Starting compilation for job 49b8d461-c9fe-4fa3-94c1-1eae56e8fe46
+INFO 2026-01-27 12:00:28,841 compile_tasks 36748 1543353639488 Created temp dir: C:\Users\ebrah\AppData\Local\Temp\tmpzpg5m8in
+INFO 2026-01-27 12:00:28,843 compile_tasks 36748 1543353639488 Written LaTeX file: C:\Users\ebrah\AppData\Local\Temp\tmpzpg5m8in\cv.tex
+INFO 2026-01-27 12:00:28,858 compile_tasks 36748 1543353639488 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-27 12:00:28,859 compile_tasks 36748 1543353639488 Running Tectonic for job 49b8d461-c9fe-4fa3-94c1-1eae56e8fe46
+ERROR 2026-01-27 12:00:28,866 compile_tasks 36748 1543353639488 Job 49b8d461-c9fe-4fa3-94c1-1eae56e8fe46 failed: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\Machine Learning\CodE\2. Projects\resume\backend\core\tasks\compile_tasks.py", line 91, in compile_latex_to_pdf
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-27 12:00:29,073 compile_tasks 36748 1543353639488 Job 49b8d461-c9fe-4fa3-94c1-1eae56e8fe46 failed: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-27 12:00:29,264 compile_tasks 36748 1543353639488 Job 49b8d461-c9fe-4fa3-94c1-1eae56e8fe46 failed: [WinError 2] The system cannot find the file specified
+INFO 2026-01-27 12:12:26,054 compile_tasks 36748 1543375587584 Starting compilation for job 75693225-acbf-4fb0-817d-2e982dc583ea
+INFO 2026-01-27 12:12:26,256 compile_tasks 36748 1543375587584 Created temp dir: C:\Users\ebrah\AppData\Local\Temp\tmpuwj03g85
+INFO 2026-01-27 12:12:26,257 compile_tasks 36748 1543375587584 Written LaTeX file: C:\Users\ebrah\AppData\Local\Temp\tmpuwj03g85\cv.tex
+INFO 2026-01-27 12:12:26,260 compile_tasks 36748 1543375587584 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-27 12:12:26,261 compile_tasks 36748 1543375587584 Running Tectonic for job 75693225-acbf-4fb0-817d-2e982dc583ea
+ERROR 2026-01-27 12:12:26,270 compile_tasks 36748 1543375587584 Job 75693225-acbf-4fb0-817d-2e982dc583ea failed: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\Machine Learning\CodE\2. Projects\resume\backend\core\tasks\compile_tasks.py", line 91, in compile_latex_to_pdf
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-27 12:12:26,491 compile_tasks 36748 1543375587584 Job 75693225-acbf-4fb0-817d-2e982dc583ea failed: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-27 12:12:26,706 compile_tasks 36748 1543375587584 Job 75693225-acbf-4fb0-817d-2e982dc583ea failed: [WinError 2] The system cannot find the file specified
+INFO 2026-01-27 12:14:02,295 compile_tasks 36748 1543375859008 Starting compilation for job c22517a7-752a-4e90-9b01-6d25a6a796a7
+INFO 2026-01-27 12:14:02,494 compile_tasks 36748 1543375859008 Created temp dir: C:\Users\ebrah\AppData\Local\Temp\tmpj2r3enwg
+INFO 2026-01-27 12:14:02,496 compile_tasks 36748 1543375859008 Written LaTeX file: C:\Users\ebrah\AppData\Local\Temp\tmpj2r3enwg\cv.tex
+INFO 2026-01-27 12:14:02,499 compile_tasks 36748 1543375859008 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-27 12:14:02,500 compile_tasks 36748 1543375859008 Running Tectonic for job c22517a7-752a-4e90-9b01-6d25a6a796a7
+ERROR 2026-01-27 12:14:02,509 compile_tasks 36748 1543375859008 Job c22517a7-752a-4e90-9b01-6d25a6a796a7 failed: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\Machine Learning\CodE\2. Projects\resume\backend\core\tasks\compile_tasks.py", line 91, in compile_latex_to_pdf
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-27 12:14:02,743 compile_tasks 36748 1543375859008 Job c22517a7-752a-4e90-9b01-6d25a6a796a7 failed: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-27 12:14:02,951 compile_tasks 36748 1543375859008 Job c22517a7-752a-4e90-9b01-6d25a6a796a7 failed: [WinError 2] The system cannot find the file specified
+INFO 2026-01-27 12:17:11,690 compile_tasks 36748 1543376592640 Starting compilation for job 368bef45-855d-487e-8ed0-25c9f90470bb
+INFO 2026-01-27 12:17:11,889 compile_tasks 36748 1543376592640 Created temp dir: C:\Users\ebrah\AppData\Local\Temp\tmpg5lwbwo3
+INFO 2026-01-27 12:17:11,890 compile_tasks 36748 1543376592640 Written LaTeX file: C:\Users\ebrah\AppData\Local\Temp\tmpg5lwbwo3\cv.tex
+INFO 2026-01-27 12:17:11,892 compile_tasks 36748 1543376592640 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-27 12:17:11,893 compile_tasks 36748 1543376592640 Running Tectonic for job 368bef45-855d-487e-8ed0-25c9f90470bb
+ERROR 2026-01-27 12:17:11,900 compile_tasks 36748 1543376592640 Job 368bef45-855d-487e-8ed0-25c9f90470bb failed: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\Machine Learning\CodE\2. Projects\resume\backend\core\tasks\compile_tasks.py", line 91, in compile_latex_to_pdf
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ebrah\anaconda3\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-27 12:17:12,107 compile_tasks 36748 1543376592640 Job 368bef45-855d-487e-8ed0-25c9f90470bb failed: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-27 12:17:12,298 compile_tasks 36748 1543376592640 Job 368bef45-855d-487e-8ed0-25c9f90470bb failed: [WinError 2] The system cannot find the file specified
+INFO 2026-01-29 23:13:58,048 compile_tasks 30440 1986040871424 Starting compilation for job b2204a09-15f3-4f8d-8720-761d6fed47d0
+INFO 2026-01-29 23:13:58,267 compile_tasks 30440 1986040871424 Created temp dir: C:\Users\ebrah\AppData\Local\Temp\tmp252m5go3
+INFO 2026-01-29 23:13:58,268 compile_tasks 30440 1986040871424 Written LaTeX file: C:\Users\ebrah\AppData\Local\Temp\tmp252m5go3\cv.tex
+INFO 2026-01-29 23:13:58,280 compile_tasks 30440 1986040871424 Copied font: Tajawal-Medium 500.ttf
+INFO 2026-01-29 23:13:58,280 compile_tasks 30440 1986040871424 Running Tectonic for job b2204a09-15f3-4f8d-8720-761d6fed47d0
+ERROR 2026-01-29 23:13:58,285 compile_tasks 30440 1986040871424 Job b2204a09-15f3-4f8d-8720-761d6fed47d0 failed: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "E:\Machine Learning\CodE\2. Projects\resume\backend\core\tasks\compile_tasks.py", line 91, in compile_latex_to_pdf
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ebrah\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ebrah\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-29 23:13:58,516 compile_tasks 30440 1986040871424 Job b2204a09-15f3-4f8d-8720-761d6fed47d0 failed: [WinError 2] The system cannot find the file specified
+ERROR 2026-01-29 23:13:58,711 compile_tasks 30440 1986040871424 Job b2204a09-15f3-4f8d-8720-761d6fed47d0 failed: [WinError 2] The system cannot find the file specified

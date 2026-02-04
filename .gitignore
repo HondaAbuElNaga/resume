@@ -21,7 +21,7 @@ $RECYCLE.BIN/
 /frontend/.env.development.local
 /frontend/.env.test.local
 /frontend/.env.production.local
-
+backend/logs/errors.log
 errors.log
 # Byte-compiled / optimized / DLL files
 __pycache__/

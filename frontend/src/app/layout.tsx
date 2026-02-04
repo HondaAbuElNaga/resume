@@ -58,16 +58,31 @@
 //   );
 // }
 import type { Metadata, Viewport } from "next";
-import { Zain } from "next/font/google";
+import { Zain, Space_Grotesk, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-// ❌ حذفنا استيراد Header و Footer من هنا
-import { cn } from "@/lib/utils"; 
-import QueryProvider from "@/providers/QueryProvider"; 
+import { cn } from "@/lib/utils";
+import QueryProvider from "@/providers/QueryProvider";
 
+// Modern typography pairing for Arabic + English
 const zain = Zain({
   subsets: ["arabic"],
-  weight: ["200", "300", "400", "700", "800", "900"],
-  variable: "--font-zain", 
+  weight: ["300", "400", "700", "800", "900"],
+  variable: "--font-zain",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-plus-jakarta",
+  display: "swap",
 });
 
 export const viewport: Viewport = {
@@ -95,9 +110,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="ar" dir="rtl" className="scroll-smooth">
       <body
         className={cn(
-          zain.variable, 
-          // حذفنا flex flex-col و min-h-screen من هنا لأن كل لايوت فرعي سيحدد ذلك بنفسه
-          "font-zain antialiased bg-white text-slate-900"
+          zain.variable,
+          spaceGrotesk.variable,
+          plusJakarta.variable,
+          "font-zain antialiased bg-white text-slate-900 [&_.font-display]:font-space-grotesk [&_.font-body]:font-plus-jakarta [&_font-display]:font-space-grotesk [&_font-body]:font-plus-jakarta"
         )}
       >
         <QueryProvider>
